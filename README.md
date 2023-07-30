@@ -27,8 +27,10 @@ PacletInstall["JerryI/LPM"]
 
 or directly
 ```mathematica
-Get["https://github.com/JerryI/wl-localpackages"]
+Get["https://raw.githubusercontent.com/JerryI/wl-localpackages/main/Kernel/LPM.wl"]
 ```
+
+or paste this single file to your project
 
 or from Github releases.
 
