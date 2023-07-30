@@ -6,13 +6,19 @@ Github::usage = "internal name to specify the source of the package"
 
 Begin["`Private`"]
 
-PacletRepositories[list_List] := Module[{projectDir, info, repos, cache, updated, removed, new, current, updatable},
+PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, repos, cache, updated, removed, new, current, updatable},
 
     repos = (#-><|"key"->#|>)&/@list // Association;
-    projectDir = NotebookDirectory[];
-    If[!StringQ[projectDir], projectDir = DirectoryName[$InputFileName]];
-    If[!StringQ[projectDir], Echo["LPM >> Sorry. cannot work without project directory. Save your notebook / script first"]; Abort[]];
-    
+
+    If[OptionValue["Directory"]//StringQ,
+      projectDir = OptionValue["Directory"];
+      If[!StringQ[projectDir], Echo["LPM >> Sorry. wrong folder!"]; Abort[]];
+    ,
+      projectDir = NotebookDirectory[];
+      If[!StringQ[projectDir], projectDir = DirectoryName[$InputFileName]];
+      If[!StringQ[projectDir], Echo["LPM >> Sorry. cannot work without project directory. Save your notebook / script first"]; Abort[]];    
+    ];
+
     Echo["LPM >> project directory >> "<>projectDir];
     Echo["LPM >> fetching paclet infos..."];
 
@@ -48,6 +54,8 @@ PacletRepositories[list_List] := Module[{projectDir, info, repos, cache, updated
 
     Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
 ]
+
+Options[PacletRepositories] = {"Directory"->None}
 
 CacheStore[dir_String, repos_Association] := Export[FileNameJoin[{dir, "wl_packages_lock.wl"}], repos]
 CacheLoad[dir_String] := If[!FileExistsQ[FileNameJoin[{dir, "wl_packages_lock.wl"}]], Missing[], Import[FileNameJoin[{dir, "wl_packages_lock.wl"}]]];
