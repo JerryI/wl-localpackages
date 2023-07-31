@@ -1,4 +1,4 @@
-# Wolfram Language Local Packaging Manager
+# Wolfram Language Local Package Manager
 
 ![logo](images-2.jpeg)
 
