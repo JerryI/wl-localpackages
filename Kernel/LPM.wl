@@ -29,8 +29,13 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     Echo["LPM >> checking cached"];
     cache = CacheLoad[projectDir];
 
-    If[FailureQ[PingTime["github.com"]],
-      Echo["LPM >> ERROR! no internet connection to github.com!"];
+    If[FailureQ[PingTime["github.com"]] || OptionValue["Passive"],
+      If[OptionValue["Passive"],
+        Echo["LPM >> WARNING! Passive mode is activated. No fetching will be allowed"];
+      ,
+        Echo["LPM >> ERROR! no internet connection to github.com!"];
+      ];
+      
       If[!MissingQ[cache], 
         Echo["LPM >> using stored data"];
         Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
@@ -67,7 +72,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
 ]
 
-Options[PacletRepositories] = {"Directory"->None}
+Options[PacletRepositories] = {"Directory"->None, "Passive"->False}
 
 CacheStore[dir_String, repos_Association] := Export[FileNameJoin[{dir, "wl_packages_lock.wl"}], repos]
 CacheLoad[dir_String] := If[!FileExistsQ[FileNameJoin[{dir, "wl_packages_lock.wl"}]], Missing[], Import[FileNameJoin[{dir, "wl_packages_lock.wl"}]]];
