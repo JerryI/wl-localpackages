@@ -1,4 +1,7 @@
 # Wolfram Language Local Packaging Manager
+
+![logo](images-2.jpeg)
+
 Got fed by by using `PacletInstall` that stores your packages in a middle of nowhere? Not receiving updates?
 Has to publish update on github and then on Wolfram Repository everytime?
 That sucks
