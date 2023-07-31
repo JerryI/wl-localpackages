@@ -29,6 +29,18 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     Echo["LPM >> checking cached"];
     cache = CacheLoad[projectDir];
 
+    If[FailureQ[PingTime["github.com"]],
+      Echo["LPM >> ERROR! no internet connection to github.com!"];
+      If[!MissingQ[cache], 
+        Echo["LPM >> using stored data"];
+        Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
+        Return[Null, Module];
+      ,
+        Echo["LPM >> ERROR! no cache found ;()"];
+        Abort[];
+      ];
+    ];
+
     If[MissingQ[cache], 
       repos = InstallPaclet[projectDir] /@ repos;
     ,
@@ -80,15 +92,20 @@ FetchInfo[a_Association] := Module[{result},
   FetchInfo[a, a["key"][[1]]]
 ]
 
-FetchInfo[a_Association, Github] := Join[a, 
-Module[{new, url = a["key"][[2]]},
+FetchInfo[a_Association, Github] :=
+Module[{new, url = a["key"][[2]], data},
     
     new = StringCases[url, RegularExpression[".com\\/(.*).git"]->"$1"]//First // Quiet;
     If[!StringQ[new], new = StringCases[url, RegularExpression[".com\\/(.*)"]->"$1"]//First];
     Echo["LPM >> fetching info by "<>new<>" on a Github..."];
-
-    Join[a, Get["https://raw.githubusercontent.com/"<>new<>"/master/PacletInfo.wl"]//First, <|"git-url"->new|>]
-]]
+    data = Check[Get["https://raw.githubusercontent.com/"<>new<>"/master/PacletInfo.wl"], $Failed];
+    If[FailureQ[data],
+      Echo["LPM >> ERROR cannot get "<>new<>"!"];
+      Echo["LPM >> Abortting"];
+      Abort[];
+    ];
+    Join[a, data//First, <|"git-url"->new|>]
+]
 
 InstallPaclet[dir_String][a_Association] := InstallPaclet[dir][a, a["key"][[1]]]
 
