@@ -22,6 +22,12 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     Echo["LPM >> project directory >> "<>projectDir];
     Echo["LPM >> fetching paclet infos..."];
 
+    If[OptionValue["Passive"], 
+      Echo["LPM >> PASSIVE MODE"];
+      Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
+      Return[Null, Module];
+    ]
+
     repos = If[!AssociationQ[#], Missing[], #] &/@ FetchInfo /@ repos;
 
     repos = repos // DeleteMissing;
@@ -29,12 +35,8 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     Echo["LPM >> checking cached"];
     cache = CacheLoad[projectDir];
 
-    If[FailureQ[PingTime["github.com"]] || OptionValue["Passive"],
-      If[OptionValue["Passive"],
-        Echo["LPM >> WARNING! Passive mode is activated. No fetching will be allowed"];
-      ,
-        Echo["LPM >> ERROR! no internet connection to github.com!"];
-      ];
+    If[FailureQ[PingTime["github.com"]],
+      Echo["LPM >> ERROR! no internet connection to github.com!"];
       
       If[!MissingQ[cache], 
         Echo["LPM >> using stored data"];
@@ -55,9 +57,9 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
 
       Echo[StringTemplate["LPM >> will be REMOVED: ``"][Length[removed]]];
       Echo[StringTemplate["LPM >> will be INSTALLED: ``"][Length[new]]];
-    
-      new = InstallPaclet[projectDir] /@ new;
+     
       RemovePaclet[projectDir] /@ removed;
+      new = InstallPaclet[projectDir] /@ new;
 
       updatable = Select[current, CheckUpdates];
       updated   = ((#->repos[#])&/@ Keys[updatable]) // Association;
