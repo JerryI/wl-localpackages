@@ -26,7 +26,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       Echo["LPM >> PASSIVE MODE"];
       Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
       Return[Null, Module];
-    ]
+    ];
 
     repos = If[!AssociationQ[#], Missing[], #] &/@ FetchInfo /@ repos;
 
