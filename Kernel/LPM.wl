@@ -6,21 +6,20 @@ Github::usage = "internal name to specify the source of the package"
 
 Begin["`Private`"]
 
-JerryI`LPM`Private`Version = 9
+JerryI`LPM`Private`Version = 10
 
-If[$VersionNumber < 12.1,
+If[!ValueQ[PacletDirectoryLoad],
   Echo["LPM >> Jeez, update your WL! Ok, we will find a way to fix it..."];
 
-  (*Get[FileNameJoin[{$InputFileName // DirectoryName, "pacletDirectoryLoad.wl"}]];*)
-
+ 
   (*Needs["PacletManager`"];
   pacletDirectoryLoad[path_String] := Module[{archive},
     archive = CreateArchive[path, FileNameJoin[{ParentDirectory[path], StringTake[path, -7]<>".zip"}], OverwriteTarget->True, CreateIntermediateDirectories -> False];
     archive = RenameFile[archive, FileNameJoin[{DirectoryName[archive], FileNameTake[archive]<>".paclet"}], OverwriteTarget->True];
     Echo["LPM >> installing fake paclet "<>archive];
     PacletInstall[archive, ForceVersionInstall -> True];
-  ]*)
-
+  ];*)
+  
   pacletDirectoryLoad[directory_String] := 
   Module[{pacletInfo, extensions}, 
   	pacletInfo = First @ Get[FileNameJoin[{directory, "PacletInfo.wl"}]]; 
