@@ -6,9 +6,10 @@ Github::usage = "internal name to specify the source of the package"
 
 Begin["`Private`"]
 
-JerryI`LPM`Private`Version = 10
+JerryI`LPM`Private`Version = 11
 
-If[!ValueQ[PacletDirectoryLoad],
+
+If[False,
   Echo["LPM >> Jeez, update your WL! Ok, we will find a way to fix it..."];
 
  
