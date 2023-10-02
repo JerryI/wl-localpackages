@@ -6,6 +6,43 @@ Github::usage = "internal name to specify the source of the package"
 
 Begin["`Private`"]
 
+JerryI`LPM`Private`Version = 9
+
+If[$VersionNumber < 12.1,
+  Echo["LPM >> Jeez, update your WL! Ok, we will find a way to fix it..."];
+
+  (*Get[FileNameJoin[{$InputFileName // DirectoryName, "pacletDirectoryLoad.wl"}]];*)
+
+  (*Needs["PacletManager`"];
+  pacletDirectoryLoad[path_String] := Module[{archive},
+    archive = CreateArchive[path, FileNameJoin[{ParentDirectory[path], StringTake[path, -7]<>".zip"}], OverwriteTarget->True, CreateIntermediateDirectories -> False];
+    archive = RenameFile[archive, FileNameJoin[{DirectoryName[archive], FileNameTake[archive]<>".paclet"}], OverwriteTarget->True];
+    Echo["LPM >> installing fake paclet "<>archive];
+    PacletInstall[archive, ForceVersionInstall -> True];
+  ]*)
+
+  pacletDirectoryLoad[directory_String] := 
+  Module[{pacletInfo, extensions}, 
+  	pacletInfo = First @ Get[FileNameJoin[{directory, "PacletInfo.wl"}]]; 
+  	extensions = Association @ Rest @ FirstCase[pacletInfo["Extensions"], {"Kernel", __}]; 
+  	With[{
+  		root = extensions["Root"], 
+  		context = extensions["Context"]
+  	}, 
+  		Unprotect[String];
+  		Map[
+  			Apply[Function[{c, f}, 
+  				String /: Needs[c] := Get[FileNameJoin[{directory, root, f}]]; 
+  				String /: Get[c] := Get[FileNameJoin[{directory, root, f}]]; 
+  			]] @ #&
+  		] @ context;
+  		Protect[String];
+  	]
+  ];
+,
+  pacletDirectoryLoad = PacletDirectoryLoad
+];
+
 PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, repos, cache, updated, removed, new, current, updatable},
 
     repos = (#-><|"key"->#|>)&/@list // Association;
@@ -24,7 +61,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
 
     If[OptionValue["Passive"], 
       Echo["LPM >> PASSIVE MODE"];
-      Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
+      Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
       Return[Null, Module];
     ];
 
@@ -40,7 +77,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       
       If[!MissingQ[cache], 
         Echo["LPM >> using stored data"];
-        Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
+        Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
         Return[Null, Module];
       ,
         Echo["LPM >> ERROR! no cache found ;()"];
@@ -71,7 +108,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
 
     CacheStore[projectDir, repos];
 
-    Map[PacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
+    Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
 ]
 
 Options[PacletRepositories] = {"Directory"->None, "Passive"->False}

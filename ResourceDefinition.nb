@@ -9846,173 +9846,2468 @@ MsGGpEvWJhFd3q99MA/17+aFR00WY+8NoC9QkZal6/Dlfw36upkdm/5+30NapfDc6kuwf8BYHLCyg=\
   Cell[
    BoxData[
     StyleBox[
-     TagBox[
-      GridBox[{{
-         ItemBox[
-          TagBox[
-           GridBox[{{
-              OverlayBox[{
-                StyleBox[
-                 TagBox[
-                  DynamicModuleBox[{Typeset`var$$ = False}, 
-                   InterpretationBox[
-                    StyleBox[
-                    PaneSelectorBox[{False -> GridBox[{{
-                    OpenerBox[
-                    Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
-                    Automatic, AutoAction -> False, ContinuousAction -> 
-                    False], 
-                    StyleBox[
-                    DynamicBox[
-                    ToBoxes[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.905093847202843`16.34420646446228*^9, TimeZone -> 0]], {
-                    "MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    StandardForm], SingleEvaluation -> True, Evaluator -> 
-                    "System"], FontSlant -> Italic, FontColor -> 
-                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
-                    False]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                    AutoDelete -> False, 
-                    GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
-                    BaselinePosition -> {1, 1}], True -> GridBox[{{
-                    OpenerBox[
-                    Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
-                    Automatic, AutoAction -> False, ContinuousAction -> 
-                    False], 
-                    StyleBox[
-                    DynamicBox[
-                    ToBoxes[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.905093847202843`16.34420646446228*^9, TimeZone -> 0]], {
-                    "MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    StandardForm], SingleEvaluation -> True, Evaluator -> 
-                    "System"], FontSlant -> Italic, FontColor -> 
-                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
-                    False]}, {"", 
-                    PaneBox["\"\"", ImageMargins -> 0]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
-                    False, GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
-                    BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`var$$], Alignment -> Automatic, ImageSize -> 
-                    Automatic, ImageMargins -> 0, BaseStyle -> {}, 
-                    DefaultBaseStyle -> "OpenerView", BaselinePosition -> 
-                    Baseline], Deployed -> False, StripOnInput -> False], 
-                    OpenerView[{
-                    Style[
-                    Dynamic[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.905093847202843`16.34420646446228*^9, TimeZone -> 0]], {
-                    "MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    SingleEvaluation -> True, Evaluator -> "System"], 
-                    FontSlant -> Italic, FontColor -> GrayLevel[0.5], 
-                    FontSize -> 0.9 Inherited], ""}, False]], 
-                   DynamicModuleValues -> Automatic], Setting[#, {0}]& ], 
-                 ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                 DynamicBox[
-                  ToBoxes[
-                   DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.905093847202843`16.34420646446228*^9, TimeZone -> 0]], {
-                    "MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                   StandardForm], SingleEvaluation -> True, Evaluator -> 
-                  "System"], FontSlant -> Italic, FontColor -> GrayLevel[0.5],
-                  FontSize -> 0.9 Inherited, StripOnInput -> False]}, 
-               Alignment -> {Right, Baseline}], "\"   \"", 
-              ItemBox[
-               
-               DynamicModuleBox[{
-                DefinitionNotebookClient`Utilities`PackagePrivate`pi$$ = 
-                 Mouseover[
-                   Dynamic[
-                   DefinitionNotebookClient`$StripeProgressDisplay, 
-                    TrackedSymbols :> {
-                    DefinitionNotebookClient`$StripeProgressDisplay}], 
-                   Button["Abort \[RightGuillemet]", FrontEndExecute[
-                    FrontEnd`EvaluatorAbort[Automatic]]; 
-                    DefinitionNotebookClient`$ButtonsDisabled = False; Null, 
-                    Appearance -> None, BaseStyle -> Dynamic[
-                    FEPrivate`If[
-                    CurrentValue["MouseOver"], {"HyperlinkActive"}, {
-                    "Hyperlink"}]], Method -> "Preemptive"], ImageSize -> 
-                   All]}, 
-                DynamicBox[
-                 ToBoxes[
-                 DefinitionNotebookClient`Utilities`PackagePrivate`pi$$, 
-                  StandardForm], 
-                 TrackedSymbols :> {
-                  DefinitionNotebookClient`Utilities`PackagePrivate`pi$$}], 
-                Initialization :> 
-                If[$SessionID =!= 21959080849314238156, 
-                  DefinitionNotebookClient`Utilities`PackagePrivate`pi$$ = 
-                  ""], DynamicModuleValues :> {}], ItemSize -> Scaled[0.75], 
-               StripOnInput -> False]}}, 
-            GridBoxAlignment -> {
-             "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, AutoDelete -> 
-            False, GridBoxItemSize -> {
-             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
-          ItemSize -> Fit, StripOnInput -> False], 
-         ItemBox["\"\"", ItemSize -> All, StripOnInput -> False], 
-         ItemBox[
-          TagBox[
-           ButtonBox[
-            TagBox[
-             PaneSelectorBox[{False -> GraphicsBox[{
-                  GrayLevel[
-                   NCache[
-                    Rational[64, 85], 0.7529411764705882]], 
-                  
-                  PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                   0.42426406871192845`}, {0.42426406871192845`, 
-                   0.282842712474619}}], 
-                  
-                  PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                   0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                   0.42426406871192845`}}]}, ImageSize -> 18, 
-                 PlotRangePadding -> 0, PlotRange -> 0.7, Background -> None],
-                True -> GraphicsBox[{
-                  GrayLevel[
-                   NCache[
-                    Rational[128, 255], 0.5019607843137255]], 
-                  
-                  PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                   0.42426406871192845`}, {0.42426406871192845`, 
-                   0.282842712474619}}], 
-                  
-                  PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                   0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                   0.42426406871192845`}}]}, ImageSize -> 18, 
-                 PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
-                 None]}, 
+     InterpretationBox[
+      StyleBox[
+       PaneSelectorBox[{False -> GridBox[{{
+             OpenerBox[
               Dynamic[
-               CurrentValue["MouseOver"]], ImageSize -> Automatic, 
-              FrameMargins -> 0], 
-             MouseAppearanceTag["LinkHand"]], ButtonFunction :> 
-            With[{
-              DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
+               CurrentValue[
+                EvaluationCell[], {TaggingRules, "StripeOpen"}, False]], 
+              Appearance -> Automatic, Enabled -> Automatic, AutoAction -> 
+              False, ContinuousAction -> False], 
+             TagBox[
+              GridBox[{{
+                 StyleBox[
+                  DynamicBox[
+                   ToBoxes[
+                    DateString[
+                    TimeZoneConvert[
+                    DateObject[
+                    3.905095178625674`16.344206612532858*^9, TimeZone -> 
+                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
+                    StandardForm], SingleEvaluation -> True, Evaluator -> 
+                   "System"], FontSlant -> Italic, FontColor -> 
+                  GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
+                  False], "\"   \"", 
+                 TagBox[
+                  GridBox[{{
+                    TagBox[
+                    TagBox[
+                    GridBox[{{
+                    StyleBox["\"\[Checkmark]\"", FontColor -> RGBColor[0, 
+                    Rational[2, 3], 0], FontSize -> 16, FontWeight -> "Heavy",
+                     StripOnInput -> False], "\"\"", 
+                    "\"Your paclet resource is being published\""}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.25}}, "ColumnsIndexed" -> {2 -> 0.1}, 
+                    "Rows" -> {{Automatic}}}], "Grid"], Annotation[#, 
+                    
+                    DefinitionNotebookClient`Stripes`PackagePrivate`$\
+stripeText["Your paclet resource is being published"]]& ], "\"\""}}, 
+                   AutoDelete -> False, 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                   GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                 "\"\"", 
+                 StyleBox[
+                  ActionMenuBox[
+                   TagBox[
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{
+                    RGBColor[1., 0.4627450980392157, 0.], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], 
+                    StyleBox[
+                    "1", FontColor -> GrayLevel[0.5], FontSize -> 9, 
+                    StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                    "\"Potential issues found\""}, "PrettyTooltipTemplate"], 
+                    TemplateBox[{
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], 
+                    StyleBox[
+                    "11", FontColor -> GrayLevel[0.5], FontSize -> 9, 
+                    StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                    "\"Suggestions found\""}, "PrettyTooltipTemplate"], 
+                    "\"   \""}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Grid"], 
+                    MouseAppearanceTag["LinkHand"]], {TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[1., 0.4627450980392157, 0.], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    "\"The paclet description and the resource description \
+are expected to match\""}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Warning", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "ba0c04c1-a3b6-4741-b9a5-70111f4d2325", 23305240, 
+                    "PacletDescriptionMismatch", <|
+                    "PacletDescription" -> "Local Package Manager", 
+                    "ResourceDescription" -> 
+                    "Wolfram Language Local Package Manager", 
+                    "PacletDirectory" -> 
+                    File["/Volumes/Data/Github/wl-localpackages"], 
+                    "Selection" -> ("Description" -> 
+                    "Wolfram Language Local Package Manager")|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[23305240]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L15,C32) \
+\\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
+False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "e4a0661b-189a-4af0-b3ab-423cf3d08888", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 15, 
+                    "SourceColumnStart" -> 32, "SourceLineEnd" -> 15, 
+                    "SourceColumnEnd" -> 36, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L15,C32) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{15, 32}, {15, 36}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L15,C32) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L19,C32) \
+\\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
+False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "258a3238-9aff-4c05-90b6-d2153942c3a4", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 19, 
+                    "SourceColumnStart" -> 32, "SourceLineEnd" -> 19, 
+                    "SourceColumnEnd" -> 36, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L19,C32) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{19, 32}, {19, 36}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L19,C32) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L22,C5) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "38e1dc54-5b83-4d6b-9606-706fda49893f", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 22, 
+                    "SourceColumnStart" -> 5, "SourceLineEnd" -> 22, 
+                    "SourceColumnEnd" -> 9, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L22,C5) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{22, 5}, {22, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L22,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L23,C5) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "9d5e1d7f-cb61-498e-beb6-88e3b97a4c89", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 23, 
+                    "SourceColumnStart" -> 5, "SourceLineEnd" -> 23, 
+                    "SourceColumnEnd" -> 9, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L23,C5) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{23, 5}, {23, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L23,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L26,C7) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "0225d517-733f-4ef1-95b0-a2ba0ba7bd4b", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 26, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 26, 
+                    "SourceColumnEnd" -> 11, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L26,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{26, 7}, {26, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L26,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L35,C5) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "dd7fb8d3-f3d0-4fc2-a7c1-560f1f30a4d6", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 35, 
+                    "SourceColumnStart" -> 5, "SourceLineEnd" -> 35, 
+                    "SourceColumnEnd" -> 9, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L35,C5) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{35, 5}, {35, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L35,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L39,C7) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "d14d2f60-ae18-4732-b6fc-2a727bde4da2", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 39, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 39, 
+                    "SourceColumnEnd" -> 11, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L39,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{39, 7}, {39, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L39,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L42,C9) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "6b916814-17a1-42e5-b844-177b5041280f", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 42, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 42, 
+                    "SourceColumnEnd" -> 13, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L42,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{42, 9}, {42, 13}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    
+                    "\!\(\*StyleBox[\"\\\" (L42,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L46,C9) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "439feedb-7285-4590-8b00-a50bf9186fd6", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 46, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 46, 
+                    "SourceColumnEnd" -> 13, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L46,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{46, 9}, {46, 13}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L46,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L58,C7) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "6fb7dd78-d720-48f4-bc4d-789325bf9192", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 58, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 58, 
+                    "SourceColumnEnd" -> 11, "Message" -> 
+                    
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L58,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{58, 7}, {58, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L58,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    "\"The headline image dimensions should usually be at \
+least \\!\\(\\*RowBox[{\\\"400\\\", \\\"\[Times]\\\", \\\"400\\\"}]\\)\""}, 
+                    "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "87cdf6f7-27ac-4656-b71a-9bb1b70d4153", 1987742438, 
+                    "HeroImageTooSmall", <|
+                    "Actual" -> {575, 323}, "Expected" -> 
+                    "\!\(\*RowBox[{\"400\", \"\[Times]\", \"400\"}]\)", 
+                    "Resize" -> {713, 400}|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[
+                    1987742438]; Null]}, Appearance -> None, Method -> 
+                   "Queued"], "BoxID" -> "WarningCountButton", StripOnInput -> 
+                  False], 
+                 TagBox[
+                  ButtonBox[
+                   TagBox[
+                    PaneSelectorBox[{False -> GraphicsBox[{
+                    GrayLevel[
+                    NCache[
+                    Rational[64, 85], 0.7529411764705882]], 
+                    
+                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                    0.42426406871192845`}, {0.42426406871192845`, 
+                    0.282842712474619}}], 
+                    
+                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                    0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                    0.42426406871192845`}}]}, ImageSize -> 18, 
+                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
+                    None], True -> GraphicsBox[{
+                    GrayLevel[
+                    NCache[
+                    Rational[128, 255], 0.5019607843137255]], 
+                    
+                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                    0.42426406871192845`}, {0.42426406871192845`, 
+                    0.282842712474619}}], 
+                    
+                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                    0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                    0.42426406871192845`}}]}, ImageSize -> 18, 
+                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
+                    None]}, 
+                    Dynamic[
+                    CurrentValue["MouseOver"]], ImageSize -> Automatic, 
+                    FrameMargins -> 0], 
+                    MouseAppearanceTag["LinkHand"]], ButtonFunction :> 
+                   With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
+                    EvaluationNotebook[]}, 
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells] = If[
+                    TrueQ[
+                    MemberQ[
+                    CurrentValue["ModifierKeys"], "Control"]], 
+                    DeleteCases[
+                    Flatten[{
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells]}], 
+                    Cell[
+                    Blank[], "StripeCell", 
+                    BlankNullSequence[]]], 
+                    DeleteCases[
+                    Flatten[{
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells]}], 
+                    Condition[
+                    Pattern[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                    Blank[Cell]], 
+                    Not[
+                    FreeQ[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                    "58c7e7f1-8d5d-4697-a5d1-0b80c7ed4835"]]]]]], Appearance -> 
+                   None, BoxID -> "58c7e7f1-8d5d-4697-a5d1-0b80c7ed4835", 
+                   Evaluator -> Automatic, Method -> "Preemptive"], 
+                  MouseAppearanceTag["LinkHand"]]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left, Left, Right, Right, Right}, 
+                 "Rows" -> {{Baseline}}}, AutoDelete -> False, 
+               GridBoxItemSize -> {
+                "Columns" -> {
+                  Automatic, Automatic, Automatic, Fit, 8, Automatic}, 
+                 "Rows" -> {{Automatic}}}], "Grid"]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False, 
+           GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           GridBoxSpacings -> {"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
+           BaselinePosition -> {1, 1}], True -> GridBox[{{
+             OpenerBox[
+              Dynamic[
+               CurrentValue[
+                EvaluationCell[], {TaggingRules, "StripeOpen"}, False]], 
+              Appearance -> Automatic, Enabled -> Automatic, AutoAction -> 
+              False, ContinuousAction -> False], 
+             TagBox[
+              GridBox[{{
+                 StyleBox[
+                  DynamicBox[
+                   ToBoxes[
+                    DateString[
+                    TimeZoneConvert[
+                    DateObject[
+                    3.905095178625674`16.344206612532858*^9, TimeZone -> 
+                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
+                    StandardForm], SingleEvaluation -> True, Evaluator -> 
+                   "System"], FontSlant -> Italic, FontColor -> 
+                  GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
+                  False], "\"   \"", 
+                 TagBox[
+                  GridBox[{{
+                    TagBox[
+                    TagBox[
+                    GridBox[{{
+                    StyleBox["\"\[Checkmark]\"", FontColor -> RGBColor[0, 
+                    Rational[2, 3], 0], FontSize -> 16, FontWeight -> "Heavy",
+                     StripOnInput -> False], "\"\"", 
+                    "\"Your paclet resource is being published\""}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.25}}, "ColumnsIndexed" -> {2 -> 0.1}, 
+                    "Rows" -> {{Automatic}}}], "Grid"], Annotation[#, 
+                    
+                    DefinitionNotebookClient`Stripes`PackagePrivate`$\
+stripeText["Your paclet resource is being published"]]& ], "\"\""}}, 
+                   AutoDelete -> False, 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                   GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                 "\"\"", 
+                 StyleBox[
+                  ActionMenuBox[
+                   TagBox[
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{
+                    RGBColor[1., 0.4627450980392157, 0.], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], 
+                    StyleBox[
+                    "1", FontColor -> GrayLevel[0.5], FontSize -> 9, 
+                    StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                    "\"Potential issues found\""}, "PrettyTooltipTemplate"], 
+                    TemplateBox[{
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], 
+                    StyleBox[
+                    "11", FontColor -> GrayLevel[0.5], FontSize -> 9, 
+                    StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                    "\"Suggestions found\""}, "PrettyTooltipTemplate"], 
+                    "\"   \""}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Grid"], 
+                    MouseAppearanceTag["LinkHand"]], {TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[1., 0.4627450980392157, 0.], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    "\"The paclet description and the resource description \
+are expected to match\""}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Warning", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "ba0c04c1-a3b6-4741-b9a5-70111f4d2325", 23305240, 
+                    "PacletDescriptionMismatch", <|
+                    "PacletDescription" -> "Local Package Manager", 
+                    "ResourceDescription" -> 
+                    "Wolfram Language Local Package Manager", 
+                    "PacletDirectory" -> 
+                    File["/Volumes/Data/Github/wl-localpackages"], 
+                    "Selection" -> ("Description" -> 
+                    "Wolfram Language Local Package Manager")|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[23305240]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L15,C32) \
+\\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
+False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "e4a0661b-189a-4af0-b3ab-423cf3d08888", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 15, 
+                    "SourceColumnStart" -> 32, "SourceLineEnd" -> 15, 
+                    "SourceColumnEnd" -> 36, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L15,C32) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{15, 32}, {15, 36}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L15,C32) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L19,C32) \
+\\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
+False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "258a3238-9aff-4c05-90b6-d2153942c3a4", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 19, 
+                    "SourceColumnStart" -> 32, "SourceLineEnd" -> 19, 
+                    "SourceColumnEnd" -> 36, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L19,C32) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{19, 32}, {19, 36}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L19,C32) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L22,C5) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "38e1dc54-5b83-4d6b-9606-706fda49893f", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 22, 
+                    "SourceColumnStart" -> 5, "SourceLineEnd" -> 22, 
+                    "SourceColumnEnd" -> 9, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L22,C5) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{22, 5}, {22, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L22,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L23,C5) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "9d5e1d7f-cb61-498e-beb6-88e3b97a4c89", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 23, 
+                    "SourceColumnStart" -> 5, "SourceLineEnd" -> 23, 
+                    "SourceColumnEnd" -> 9, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L23,C5) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{23, 5}, {23, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L23,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L26,C7) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "0225d517-733f-4ef1-95b0-a2ba0ba7bd4b", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 26, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 26, 
+                    "SourceColumnEnd" -> 11, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L26,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{26, 7}, {26, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L26,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L35,C5) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "dd7fb8d3-f3d0-4fc2-a7c1-560f1f30a4d6", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 35, 
+                    "SourceColumnStart" -> 5, "SourceLineEnd" -> 35, 
+                    "SourceColumnEnd" -> 9, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L35,C5) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{35, 5}, {35, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    
+                    "\!\(\*StyleBox[\"\\\" (L35,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L39,C7) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "d14d2f60-ae18-4732-b6fc-2a727bde4da2", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 39, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 39, 
+                    "SourceColumnEnd" -> 11, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L39,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{39, 7}, {39, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L39,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L42,C9) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "6b916814-17a1-42e5-b844-177b5041280f", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 42, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 42, 
+                    "SourceColumnEnd" -> 13, "Message" -> 
+                    
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L42,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{42, 9}, {42, 13}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L42,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L46,C9) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "439feedb-7285-4590-8b00-a50bf9186fd6", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 46, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 46, 
+                    "SourceColumnEnd" -> 13, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L46,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{46, 9}, {46, 13}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L46,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> "Medium", StripOnInput -> 
+                    False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L58,C7) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "6fb7dd78-d720-48f4-bc4d-789325bf9192", 25213199, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 58, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 58, 
+                    "SourceColumnEnd" -> 11, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L58,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{58, 7}, {58, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L58,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                    Null], TemplateBox[{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], "\" \"", 
+                    "\"The headline image dimensions should usually be at \
+least \\!\\(\\*RowBox[{\\\"400\\\", \\\"\[Times]\\\", \\\"400\\\"}]\\)\""}, 
+                    "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "87cdf6f7-27ac-4656-b71a-9bb1b70d4153", 1987742438, 
+                    "HeroImageTooSmall", <|
+                    "Actual" -> {575, 323}, "Expected" -> 
+                    "\!\(\*RowBox[{\"400\", \"\[Times]\", \"400\"}]\)", 
+                    "Resize" -> {713, 400}|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[
+                    1987742438]; Null]}, Appearance -> None, Method -> 
+                   "Queued"], "BoxID" -> "WarningCountButton", StripOnInput -> 
+                  False], 
+                 TagBox[
+                  ButtonBox[
+                   TagBox[
+                    PaneSelectorBox[{False -> GraphicsBox[{
+                    GrayLevel[
+                    NCache[
+                    Rational[64, 85], 0.7529411764705882]], 
+                    
+                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                    0.42426406871192845`}, {0.42426406871192845`, 
+                    0.282842712474619}}], 
+                    
+                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                    0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                    0.42426406871192845`}}]}, ImageSize -> 18, 
+                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
+                    None], True -> GraphicsBox[{
+                    GrayLevel[
+                    NCache[
+                    Rational[128, 255], 0.5019607843137255]], 
+                    
+                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                    0.42426406871192845`}, {0.42426406871192845`, 
+                    0.282842712474619}}], 
+                    
+                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                    0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                    0.42426406871192845`}}]}, ImageSize -> 18, 
+                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
+                    None]}, 
+                    Dynamic[
+                    CurrentValue["MouseOver"]], ImageSize -> Automatic, 
+                    FrameMargins -> 0], 
+                    MouseAppearanceTag["LinkHand"]], ButtonFunction :> 
+                   With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
+                    EvaluationNotebook[]}, 
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells] = If[
+                    TrueQ[
+                    MemberQ[
+                    CurrentValue["ModifierKeys"], "Control"]], 
+                    DeleteCases[
+                    Flatten[{
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells]}], 
+                    Cell[
+                    Blank[], "StripeCell", 
+                    BlankNullSequence[]]], 
+                    DeleteCases[
+                    Flatten[{
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells]}], 
+                    Condition[
+                    Pattern[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                    Blank[Cell]], 
+                    Not[
+                    FreeQ[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                    "58c7e7f1-8d5d-4697-a5d1-0b80c7ed4835"]]]]]], Appearance -> 
+                   None, BoxID -> "58c7e7f1-8d5d-4697-a5d1-0b80c7ed4835", 
+                   Evaluator -> Automatic, Method -> "Preemptive"], 
+                  MouseAppearanceTag["LinkHand"]]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left, Left, Right, Right, Right}, 
+                 "Rows" -> {{Baseline}}}, AutoDelete -> False, 
+               GridBoxItemSize -> {
+                "Columns" -> {
+                  Automatic, Automatic, Automatic, Fit, 8, Automatic}, 
+                 "Rows" -> {{Automatic}}}], "Grid"]}, {"", 
+             PaneBox[
+              TagBox[
+               GridBox[{{"\"\"", 
+                  StyleBox[
+                   TagBox[
+                    
+                    GridBox[{{
+                    "\"\[FilledVerySmallSquare]\"", "\"Submission result:\"", 
+                    
+                    TemplateBox[{
+                    TagBox[
+                    RowBox[{
+                    TagBox["Success", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxOpener"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    FrameBox[
+                    StyleBox["\"\[Checkmark]\"", 
+                    Directive[
+                    RGBColor[
+                    0.3607843137254902, 0.596078431372549, 
+                    0.3803921568627451], 25], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    
+                    GridBox[{{
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"ResourceType\"", "\": \""}, "RowDefault"],
+                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"Paclet\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"UUID\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"8130dc54-8f6f-4040-9b96-8c72c6177286\"", 
+                    "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxCloser"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    FrameBox[
+                    StyleBox["\"\[Checkmark]\"", 
+                    Directive[
+                    RGBColor[
+                    0.3607843137254902, 0.596078431372549, 
+                    0.3803921568627451], 25], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    
+                    GridBox[{{
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"ResourceType\"", "\": \""}, "RowDefault"],
+                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"Paclet\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"UUID\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"8130dc54-8f6f-4040-9b96-8c72c6177286\"", 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Version\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"0.0.7\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"SubmissionID\"", "\": \""}, "RowDefault"],
+                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"4656\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    
+                    TemplateBox[{"\"DirectCreation\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["True", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Message\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"Your paclet resource is being published\"", 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"ResourceSubmission\"", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    Short[#, 0.75]& ], 
+                    "OEM6eJztWM1u20YQtixKsmRFcRMXRXsSCKNFDwqc1LGdXlyZthIDcSJol\
+bRFUSArcigtSi6J3aUd9R166rWHvlV7bh+gj9DO8kc/lAO4sovmIF4ocP6+\
+nZ2ZbyC3IDd69PI4eAvSLckPzrgCEQpQVLGA42e3IMu9QCu4hjSeM6ncdVnu0yF+\
+IRUS2TZISTZJ5PtUjJ8BdUjhO7cot07GnPrMPg+\
+cyANtvj4xLxJQstEfhyBBvQlC4Ds7stShnoRMup1JwR+AQxAO7OyQUg/9j1Fnsw9+\
+6OHHBGHiuCjvdikHAh7YKhDzMY0ewsiClGTlqWDOvHH2rmgnWlSW1eNIqSwNtfREid9POqddwS4Qwp\
+uOCLg65U4PZBAJG0i1c3rMlE9DSbbSxKDRSzwnCA1eQzkBj47BkY0kRCfits74u7Jj9EUEk2PU2mEI\
+VFCOyTdeBHwqqR5TCUSNPXDXcmevnl5QL6KYGVltRyrw8YrtibR8DmoUOKTWFYC5VexixmnbY0PuA1\
+dZQmXZAl0p2XuqeubTIRD2I2DGKmnGJlZzcUt95oMUa/FT/2ryBQ3rViQEOn6NgIHc6WB+LRo+\
+AzYcaQilbnCJMQtyuz2QgRcpmNWXd87pkDOX2XENW3/jdW90BPXjSy3KjTg9unxL5h+//Gyiw+\
+oJE1gz+swo7z09tgIvEOKj+PntSNyPnz+PxDfx8/\
+uR9fHkxHWiBAtf8jMeRmpaxYmwYSF0BNaljsP4MC+uxbBiPLl7rMeScyqGjMvZMtZva81ay/9+\
+N5bytNgzP4XJO+vtYr63802WmpKGmZW5rlCTGOaXTZPU0M0JuDTyFPkwLfkzBX6b8yAZJaT410+/\
+zoyODbNLbQ+UOZkdWv8myMrmq1dnJ8sj+tQ8fPjFrmM/\
+3msduvtua293b7f1ZPBkv3VoHzyy9x8eHDw63M/hzTK/\
+laZ4oVMyDVLBmop8LmeOmDSF8RzcqZqBuBd1rmjYmv6EUwQU5MvqbgpGI4xb8dpYFuNcH1AWlYTU1r\
+V+7ajW+r8PNjPnjNyc2yaj4FI3Ah9aIxyStp5T+\
+RRtvoiQWAQ22A8LsgYOdmxZnAhM6gFSnN5y7HrMFX2bNG3e9D8ug2I/CN/fAtjSd+\
+IxDt1AspTMkgsuWIWJVsJk/wsDW14gl2bg/OheUfCKgpeg4MqKgm+Zgm+At2q+\
+xgZCIMtDrpi7D3YfHNwepoZJooHPpIZ1k1yWzb39x7eYqy0z6VBLQBxveWQxA9ziHZ4jD+PEWx7Q5+\
+a32E7NMO6Gpkibq8lkcwA4MpphNPCYHIFze9ksmShfHvH2ZARMi2W1ma4209VmusRmOt2S8kvfFTvV\
+jHtST/tNr6tefq28P/cHWLIWZQshKXyP6pN/z+\
+4tNnO73CL1WZon5YSsW8TQHEt2rsOULVJJCY6UYppqacxTdiGG5ogWacyP9mRHR+\
+N0spLPrjkfpxWQ/AlHB95CBWycOuxKwb3E5mumRunKJhMg/wBf+PQ1"}, 
+                    "ClickToCopyTemplate"]}, {
+                    "\"\[FilledVerySmallSquare]\"", "\"Resource object:\"", 
+                    TemplateBox[{
+                    TagBox[
+                    RowBox[{"ResourceObject", "[", 
+                    ButtonBox[
+                    TagBox[
+                    GridBox[{{
+                    GraphicsBox[{
+                    Thickness[0.0025], {
+                    FaceForm[{
+                    RGBColor[
+                    0.9607843137254902, 0.5058823529411764, 
+                    0.19607843137254902`], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}}}, {{{205., 22.660200119018555`}, {205., 
+                    212.11320304870605`}, {246.01799774169922`, 
+                    235.79520988464355`}, {369.0710144042969, 
+                    306.8401927947998}, {369.0710144042969, 
+                    117.38719749450684`}, {205., 22.660200119018555`}}, {{
+                    30.928985595703125`, 306.8401927947998}, {
+                    153.98200225830078`, 235.79520988464355`}, {195., 
+                    212.11320304870605`}, {195., 22.660200119018555`}, {
+                    30.928985595703125`, 117.38719749450684`}, {
+                    30.928985595703125`, 306.8401927947998}}, {{200., 
+                    410.22620964050293`}, {364.0710144042969, 
+                    315.5001964569092}, {241.01799774169922`, 
+                    244.45519828796387`}, {200., 220.77320671081543`}, {
+                    158.98200225830078`, 244.45519828796387`}, {
+                    35.928985595703125`, 315.5001964569092}, {200., 
+                    410.22620964050293`}}, CompressedData["
+1:eJxTTMoPSmViYGCQAWIQDQQPlDrLHYB0n8ffYgewSEAmhO9aBaJ/1cmB+XqT
+gsF8tsaHGch8BoYNGcjqGS7lmqOYd/qhKYg+9+8dhH/prQmI9ptyBYV/jmEH
+Cj+CeUEMMr9iq24MsnkV3Eeike2b8aQrGtk9DSrhyiA6e88JMD/BvUgJbG/S
+EzBfQYpBCaKeIROZv2muNDK/YaqzeSayflj4wMyHhR/M/oDHC8uR3fdAaWM5
+svthfJj/YHyY/2F8WPjAzIOFH0p8AQA7u3Ea
+                    "]}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.5529411764705883, 0.6745098039215687, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{43., 198.67381286621094`}, {107.71399688720703`, 
+                    161.3118133544922}, {107.71399688720703`, 
+                    86.58680725097656}, {43., 123.94882202148438`}, {43., 
+                    198.67381286621094`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.3137254901960784, 0.4549019607843137, 
+                    0.611764705882353], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{182.77679443359375`, 198.67381286621094`}, {
+                    182.77679443359375`, 123.94882202148438`}, {
+                    118.06279754638672`, 86.58680725097656}, {
+                    118.06279754638672`, 161.3118133544922}, {
+                    182.77679443359375`, 198.67381286621094`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.7803921568627451, 0.8627450980392157, 
+                    0.9490196078431372], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{112.8884048461914, 244.9990997314453}, {
+                    177.60240173339844`, 207.63610076904297`}, {
+                    112.8884048461914, 170.27410888671875`}, {
+                    48.174407958984375`, 207.63610076904297`}, {
+                    112.8884048461914, 244.9990997314453}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6901960784313725, 0.5882352941176471, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{130.02911376953125`, 350.11590576171875`}, {
+                    194.80210876464844`, 312.7189064025879}, {
+                    194.80210876464844`, 237.92591094970703`}, {
+                    130.02911376953125`, 275.32291412353516`}, {
+                    130.02911376953125`, 350.11590576171875`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.4627450980392157, 0.3607843137254902, 
+                    0.611764705882353], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{269.9334716796875, 350.11590576171875`}, {
+                    269.9334716796875, 275.32291412353516`}, {
+                    205.1604766845703, 237.92591094970703`}, {
+                    205.1604766845703, 312.7189064025879}, {269.9334716796875,
+                     350.11590576171875`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.8862745098039215, 0.803921568627451, 
+                    0.9529411764705882], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{199.98130798339844`, 396.48345947265625`}, {
+                    264.7543029785156, 359.0864601135254}, {
+                    199.98130798339844`, 321.69046783447266`}, {
+                    135.20831298828125`, 359.0864601135254}, {
+                    199.98130798339844`, 396.48345947265625`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6627450980392157, 0.803921568627451, 
+                    0.5686274509803921], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{217.61199951171875`, 199.13890075683594`}, {
+                    281.8990020751953, 162.0229034423828}, {281.8990020751953,
+                     87.7908935546875}, {217.61199951171875`, 
+                    124.90690612792969`}, {217.61199951171875`, 
+                    199.13890075683594`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.43137254901960786`, 0.6039215686274509, 
+                    0.34509803921568627`], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{356.46661376953125`, 199.13890075683594`}, {
+                    356.46661376953125`, 124.90690612792969`}, {
+                    292.1796112060547, 87.7908935546875}, {292.1796112060547, 
+                    162.0229034423828}, {356.46661376953125`, 
+                    199.13890075683594`}}}]}, {
+                    FaceForm[{
+                    RGBColor[0.8549019607843137, 0.9450980392156862, 0.8], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{287.039306640625, 245.15859985351562`}, {
+                    351.32630920410156`, 208.0426025390625}, {
+                    287.039306640625, 170.92660522460938`}, {
+                    222.75230407714844`, 208.0426025390625}, {
+                    287.039306640625, 245.15859985351562`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6627450980392157, 0.803921568627451, 
+                    0.5686274509803921], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    356.46649169921875`, 215.76849365234375`}, {
+                    296.2834930419922, 250.5924949645996}, {
+                    356.46649169921875`, 285.26649475097656`}, {
+                    356.46649169921875`, 215.76849365234375`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6627450980392157, 0.803921568627451, 
+                    0.5686274509803921], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    217.61199951171875`, 114.06449890136719`}, {
+                    277.7949981689453, 79.24049758911133}, {
+                    217.61199951171875`, 44.566497802734375`}, {
+                    217.61199951171875`, 114.06449890136719`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.5529411764705883, 0.6745098039215687, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    122.17269897460938`, 78.36309814453125}, {
+                    182.42269897460938`, 113.07109832763672`}, {
+                    182.35969924926758`, 43.614097595214844`}, {
+                    122.17269897460938`, 78.36309814453125}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.5529411764705883, 0.6745098039215687, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    103.52159881591797`, 249.46669006347656`}, {
+                    43.27159881591797, 214.7586898803711}, {
+                    43.334598541259766`, 284.21569061279297`}, {
+                    103.52159881591797`, 249.46669006347656`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6901960784313725, 0.5882352941176471, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    120.86710357666016`, 350.61541748046875`}, {
+                    120.80010357499123`, 281.0834197998047}, {
+                    60.68010330200195, 315.86641693115234`}, {
+                    120.86710357666016`, 350.61541748046875`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6901960784313725, 0.5882352941176471, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    278.3727111816406, 281.2159118652344}, {
+                    278.43971118330956`, 350.74790954589844`}, {
+                    338.5597114562988, 315.9649124145508}, {278.3727111816406,
+                     281.2159118652344}}}]}}, {
+                    ImageSize -> 12, BaselinePosition -> Scaled[0.1], 
+                    ImageSize -> {Automatic, 35}}], 
+                    StyleBox["\"JerryI/LPM\"", FontFamily -> Dynamic[
+                    CurrentValue["PanelFontFamily"]], FontSize -> 
+                    0.8 Inherited, ShowStringCharacters -> False, 
+                    StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.25}}, "Rows" -> {{0}}}], "Grid"], 
+                    ButtonFunction :> {}, Evaluator -> None, Active -> False, 
+                    Alignment -> Left, 
+                    Appearance -> {
+                    "Default" -> FrontEnd`FileName[{"Typeset", "SummaryBox"}, 
+                    "Panel.9.png"]}, FrameMargins -> {{3, 3}, {3, 0}}, 
+                    BaseStyle -> {Deployed -> False}, 
+                    DefaultBaseStyle -> {Background -> None}, 
+                    BaselinePosition -> Baseline, Method -> "Preemptive"], 
+                    "]"}], Short[#, 0.75]& ], 
+                    "OEM6eJztHGtsHMX5znc+v50HKVWB0tPGpaHFjvMOSOXOPr9C4+\
+TwOgRIAl7fzdmL93YvM3u2L5WQW6AShaZpgUJpCaYtiPKjAqRKgQJ2RCuKUGlFA01LCw7hFaUkUcUj\
+IFo6M7uzO7t3Z28c16HoRpE3M/PNfI/5vplvv2/\
+2Un5U2SONtGqjAKXK0aINqg5gBgJd0mVNxc0pPwr1aAQgFUTBjTLSU2Uo1CsN4BaxvgcgLQsTYHP/\
+dSChizViNp2WYK4LSEnRvy0VQAvbcqqUlhPdWjKrADJLmTVLQAQ6qu/NZQACep+\
+WAWpDAyrvkBQEWO8S1gvS/\
+SApYqpAQ4NY3oPnz2GYml6Qzii40SDUmDiAFsQlFYhAwSRp0Ikz2IPJYEjKUUUnlJPOwexZQSYhXSF\
+U1ZrVdSaNapMjY95zOtrjUB7GJPR1QE3V29Ukk4lY1dHeKutpKYPEhaZg8KDNmE8ACfGElDagSDmQR\
+PUGio6smiCCLyadYC/\
+MAouN6pZMBkhQUhMABTdpqt1T1SohIOo5BaR8Lt6r2oclJSthyaCqlqyupfFKJ6zeUDfQB7WkWB2HA\
+MtWl4e5SVsUeUBNA1VnAkWhGCAKw5426Ia0NABEeRfAEqswJWaNcuAt75XTAEEfLbVRqwUPrI1lIcQ\
+TX4EJBmJdB5ZvTMp0AXlgkJBQHtdGME4/WtLSjzQlqwMeHtV1SwOqnJITVJVjn+\
+A1raQiMVauphNKmUE5gUh1kSkkP6rqxW1DKkAIfnPJrzoP7UpGLPXBttIhJUCHBtNWG560p7M1pika\
+hBNPkXIsAptpmYrAL9DybIRIYXNGSsh6zuT0BJm2vkNWFJDEZA8DzsL2+8rKA74yn89v/\
+yvSFnK3Gc11pNkfCOCa66+\
+raqFcWhYqo4SNy1H8d6rsl2ujXH37vTdcR56Z2yZVWoe5NIUTFo2Qp7qzEfH1g89cuSPqns9C8sI7l\
+/KD9iiRBD+pz9c3yCNldYsoc7yFhJ8PI6kwOPFRzLv3/jxnULZ/mDyf9+1DBidhysnHe3arUQ7+\
+vKfuGjKIejXh6D/yfgs/3jE/RnpeGUVyM2V/d9e/TaC4AdTVvos8P7r+fFpv+\
+qFI66FvHRrk6z7fw4M8vO+F9DrHfM8dWkOJ+M8xZHK+mjw33X7AUbeINOtXBsa38/XRXzdu5+\
+cbrfntNh7fXa9/dxtPz1jD1qXkOfTE72m9rxMKFG//\
+67QePscn8EJh9UfvOZevj90RWyfz45l82PxMfgx//PB9Izx9U8IjIzz9rM74Y3XGP6sz+bD5mPwc6+\
+XZzh99hJRDEfijO0h5IwI/+pCUIx7tfL8v4A86DHf/0oC/\
+3NDasXZK2PdfNAT76DtXU4F9dGGSr0d3378lysGPPfbxNVH3eM8MLaHlQAR+kZZ/RODtt5Fy+\
+PQZGnv5YIpniNUZwVPBG3fwDLE6Y9gx3jNDH54k5e0I/OlPSDkagdfQcuz0GRp/\
+eT1VtfGT99J9YapjFSXwxNXvUlVm/WO/6wJ0RcSzuwr10/\
+GeGTqbljcj8M8vkPLaHKrc2LFoHyFo8m+HspShh66iK/\
+WLsVsQX19435N0d2bwD351zc6oe7xnhvbeQwrWtM/T8pe5VLnjr2R4hlidETwu3C/\
+zDLE6Y9gx3jND22n5ZwQ+/hgpRyLwelrmQOWmUp/QFYg+8cwoJXjRrZTAhv6d9Ehj/ctqz9UpAw+\
+92Veon473zNAaWt7gGFpJy2tzsEJ3rKJn7NRO4/iI9+81VuY30SRf9+\
+39F90UGPxk9SXXRt3jPTNk7AUvR6BIy+GIaVUvnT5D0ZHOYZ4hVmcEP/xqK+\
+QZYnXGsGO8Z4a20YI3t0tpwY7n3T8mZS7OoftO0BWInnU/3eX2rH+P2pJvh99wycz+\
+yQd20F1uavHBoUL9dPy8qlzAZohwEyTcTA4b4h278ySlrvnmG6n4973Xo0W5/j2xAzujbvgzTr2l/\
+eEb6ckR37edUhlP/lHkrcF3Q1dH1A0/r05NQerrbjE8k6/fSamd/M4fjAP91jbKzYPffo7WJ+9+\
+3vBkePgzTv2UdOgqQk34eJOhKU//jFLZ3HmQalL4wEO0PoqepmvigJ/X070Q9ePXr6OynDx4hFjv+\
+BurV9H6w1t+YOy3dVs3kefBvz9JTz4H/Jmn/n1AqezTbyPPu+qrBmg988FRuhfd/u4y+uzKTBjU8/\
+CpClfco6YFZUBC7yHRgJjfag62jOJ3fSvqZAZWWqXE0ADUsmrSFVgp74BS2h1tqaaNvXJiCLnjMHYc\
+pEDwwxEamb84iCfiYkstuLqYlBgELFzillWtqEM5s1ndoGayOusM2ZG1gL0OpjaxeKLdw+\
+KJlcImLMhLwoL4OTNgtkEH6RZV1Yx4pBg4/\
+r1xG577X4FQnolQrBUuAxDPtHxjvFvAlFlBILFaWDbc3NTctOJCgVtLLN0OvCZKTsSE9mu6ZvVVkj5\
+TXubilJHwKSFNUmK1sTosU3UQQFkHSWvUEnFQGyFCUgdigxKUEiRg5pZiFV1UYk4kBoVlndsIhoFiH\
+uiHItOLm3UuNGWQF6hjEGIFxpFNq8iSkvnEf0HKBgviJcqHqSRRRUXmNZ/\
+oSxtQgA7ctCwwaSEryOvYzKTkhyWL0FMgfsmwimTXUQcQrw3TYjUN708RMUimsELZhHxOQ8sEwd3lR\
+a1JGNezWmP4uJTAMnWiwlC7H/eEb4HQBlACqwmZ3DvaZcJWTUnhrSy8UVIHsnhvCG/\
+UEpISxtQMkVq3pOIHLELWfGhggRX/9KugV6yxslNHxgX6g0403vadmk3ZdD+A3RIcyuurj+\
+OxehyChIzIyRGwV5lOnVN1aZTizhv6P1aDQK+W+fQqwEK2TcY1JJvZHGOB/\
+bzjQVM5ZyQFFVM0NOsUlNtVKuWgSjmoUg6qlIMq5aBKOahSDqqUg5rdCpVyUKUcVCkHVcpBlXJQpRx\
+UKQdVykGVclClHNTc5aBqSjmoUg6qlIP67OegZiSrVvgGyI1oMIlmY+GuL07M6UX/\
+RWJAuEjAtmxSiQRxESZhq6wPiiCD7Y1EulE5NkKoOwn3eaJ6kdCmJbLEmKRTEqebYLYdXSYM6noGXb\
+J8OTQzBahpxJB7QtGyyaaEll5urH8PyJAshgZzNuxybjMTu+\
+ZqKrG2C2soxLY9tKVn42zEtETYDOUBGe+D4R68H+CNwrvi1QmrVoQvyyrhlc0rVwmzW6SNWMxID2/\
+JJPF/5hN1pbBly4Y27xgvENavWNWcTKxZ3bg+\
+tTbVuLp5dXPjxf0Xr21cn1i3MrF2xbp1K9evnRUpiwV6UifDw/\
+iEOSXTrxDoOThLrKbsZ4l1TVGsti1V4LOX+FhGkiT/\
+wzaTKiRY2bccwnPFFBnbbR9L0fVrow0NaOm0MEkZZRoaUmYC7svTz0eTdhi6EoWMBB4eV9WtZRHQsD\
+AwpSFKNfUFyKni9k0wRCXzq7ALY+Wg7PPfOJXeJp50dQuE2sggkJL24WXyDb9009HL953/\
+YsRwbM1pHBkuPD6uKbkBI48ZdNIR+8RENGUlu2K+mC+/\
+e6LACJ5GLnu2ipanSWs5pZxQ1Ap2yQBSx999Ock6gM2RhyOunrcnpukx/KS/\
+TpwqNmvOCfeckWl6TGy2V1bwLcL2r2P1dmNc0fBLiDrgcIgMkdqrh8WbouXNCPZYy6nHKoaMzU2saZ\
+MlRRsw0rsOB1JUJBU7hXFFklWPruWzNhOeXN9Yjd3GnCxr6ayu+\
+h7y7oT7eqSknEXc9QXjXcmgvbCmW54uheyWID5VUJ6wAsacpqqWzdLW8l9jX2IR6bci8FpajpeMr2R\
+8c2B8vK6dR8sTEXjvXlJeicCTH5Dy1hm0Ro+2MFvzXBzT0hlCR/toBrugiLvm4vFELmzW/\
+Ef0hVwDmzKK6/xpcQ1TLaCAX5sWEJouTbeEX8dHU7UuopxKe4KZqc/n6vH5+\
+LiYcyzdVW46Gskzf9v4GUgRvDbERNFZi421KXPjLcCNG+/EzHgnivE7MTO/+\
+WMZqTPLeWa87g2uADdFISIzczOzBhTnZmYNKM7NzBpQkJvqzdiTVaQcb0rlqKZFldOS+\
+QsPdhhzJutiB0HMH6vlYrCL7Xts7Qogr9oo79ragjaQkrKK3paFRhzTHp4fx6SX/\
+YLOM7gMndMJtDTA9proxbhQSoNp65c2zqDz7V7uvAWxVCRPrU8UNRZutpldhErKnEFoPXduF/\
+iEYM4chVngPE13wXkRMS7BU9vjZ9Tt+XBHrBM9hh0AjD4uJcm5bmNz3Co9y3EYGtmA/\
+Pug9lVRV6y0SODfcolqqEuE0b829sCMflFogy4p/OXpIm8lvA3MkR+EXD+\
+Vg0Gbpl3LLHX1GAjWSC9xBbHBS1znVFwer9GHAivpXuSF5u5ZHGKau8SeLgyHLs+\
+CLJf1qOjVNEWXM+JXOoEe1gdBWHFEicJaCrfKKMzCkXl3q/\
+EM1KvzJqtaUZfUpASTZprSeb16gyrrWD/\
+lXdSg8QYzjTfqYa2x9OpMqZjnx9wvK16FrKLMyqSL7g4FPHfjRdNop3tUfjv/klDG2So+ZW2g/\
+Iv3fhQSE5ICkvk2XSiJVSAIWPqqpfRVyzypwf/zVy2c/+36YKSA+8FNL9aaFkc+dTmlnUb07yBum/\
+NYbQk1ikGSvxer7cQSbiLpEW+\
+HY6NYy6YkfIghI3fVKFZcYRwaYjlNUzRib8NOcIoXeEtbNoqL7SwYgTB3qQDJeK1jmbSRkZH8HJrWf\
+52dNqOb9nIpIy9f0dRs64zxm3dSv5KnM5XtSblgx2JjDElVmjs2Mj5N+i/qtVuE"}, 
+                    "ClickToCopyTemplate"]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {Automatic, Automatic, Fit}, 
+                    "Rows" -> {{Automatic}}}], "Grid"], FontColor -> 
+                   GrayLevel[0.5], FontSize -> 12, StripOnInput -> False]}}, 
+                GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
+                False, GridBoxDividers -> {
+                 "Columns" -> {{None}}, "RowsIndexed" -> {-1 -> GrayLevel[
+                    Rational[239, 255]]}}, 
+                GridBoxItemSize -> {
+                 "Columns" -> {Automatic, Fit}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {1, {}, 1}, "Rows" -> {1, {}, 2}}], "Grid"], 
+              ImageMargins -> 0]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False, 
+           GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           GridBoxSpacings -> {"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
+           BaselinePosition -> {1, 1}]}, 
+        Dynamic[
+         CurrentValue[
+          EvaluationCell[], {TaggingRules, "StripeOpen"}, False]], Alignment -> 
+        Automatic, ImageSize -> Automatic, ImageMargins -> 0, BaseStyle -> {},
+         DefaultBaseStyle -> "OpenerView", BaselinePosition -> Baseline], 
+       Deployed -> False, StripOnInput -> False], 
+      OpenerView[{
+        Grid[{{
+           Style[
+            Dynamic[
+             DateString[
+              TimeZoneConvert[
+               DateObject[
+               3.905095178625674`16.344206612532858*^9, TimeZone -> 0]], {
+              "MonthName", " ", "DayShort", ", ", "Year", " ", "Hour12Short", 
+               ":", "Minute", " ", "AMPMLowerCase"}], SingleEvaluation -> 
+             True, Evaluator -> "System"], FontSlant -> Italic, FontColor -> 
+            GrayLevel[0.5], FontSize -> 0.9 Inherited], "   ", 
+           Grid[{{
+              Annotation[
+               Grid[{{
+                  Style["\[Checkmark]", FontColor -> RGBColor[0, 
+                    Rational[2, 3], 0], FontSize -> 16, FontWeight -> 
+                   "Heavy"], "", "Your paclet resource is being published"}}, 
+                Alignment -> {Left, Center}, 
+                Spacings -> {{0.25, 2 -> 0.1}, Automatic}], 
+               DefinitionNotebookClient`Stripes`PackagePrivate`$stripeText[
+               "Your paclet resource is being published"]], ""}}, Spacings -> 
+            0.25], "", 
+           Style[
+            ActionMenu[
+             MouseAppearance[
+              Grid[{{
+                 RawBoxes[
+                  TemplateBox[{
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{
+                    RGBColor[1., 0.4627450980392157, 0.], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], 
+                    StyleBox[
+                    "1", FontColor -> GrayLevel[0.5], FontSize -> 9, 
+                    StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                    "\"Potential issues found\""}, "PrettyTooltipTemplate"]], 
+                 
+                 RawBoxes[
+                  TemplateBox[{
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                    "SuggestionIconTemplate"], 
+                    StyleBox[
+                    "11", FontColor -> GrayLevel[0.5], FontSize -> 9, 
+                    StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                    "\"Suggestions found\""}, "PrettyTooltipTemplate"]], 
+                 "   "}}], "LinkHand"], {Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[1., 0.4627450980392157, 0.], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 "The paclet description and the resource description are \
+expected to match"}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Warning", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "ba0c04c1-a3b6-4741-b9a5-70111f4d2325", 23305240, 
+                  "PacletDescriptionMismatch", <|
+                  "PacletDescription" -> "Local Package Manager", 
+                   "ResourceDescription" -> 
+                   "Wolfram Language Local Package Manager", 
+                   "PacletDirectory" -> 
+                   File["/Volumes/Data/Github/wl-localpackages"], 
+                   "Selection" -> ("Description" -> 
+                    "Wolfram Language Local Package Manager")|>]; 
+                DefinitionNotebookClient`PackageScope`seekAfter[23305240]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L15,C32) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"}]}] :> 
+              DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "e4a0661b-189a-4af0-b3ab-423cf3d08888", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 15, 
+                   "SourceColumnStart" -> 32, "SourceLineEnd" -> 15, 
+                   "SourceColumnEnd" -> 36, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L15,C32) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{15, 32}, {15, 36}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L15,C32) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L19,C32) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"}]}] :> 
+              DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "258a3238-9aff-4c05-90b6-d2153942c3a4", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 19, 
+                   "SourceColumnStart" -> 32, "SourceLineEnd" -> 19, 
+                   "SourceColumnEnd" -> 36, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L19,C32) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{19, 32}, {19, 36}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L19,C32) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L22,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"}]}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "38e1dc54-5b83-4d6b-9606-706fda49893f", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 22, 
+                   "SourceColumnStart" -> 5, "SourceLineEnd" -> 22, 
+                   "SourceColumnEnd" -> 9, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L22,C5) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{22, 5}, {22, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L22,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L23,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"}]}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "9d5e1d7f-cb61-498e-beb6-88e3b97a4c89", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 23, 
+                   "SourceColumnStart" -> 5, "SourceLineEnd" -> 23, 
+                   "SourceColumnEnd" -> 9, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L23,C5) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{23, 5}, {23, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L23,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L26,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"}]}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "0225d517-733f-4ef1-95b0-a2ba0ba7bd4b", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 26, 
+                   "SourceColumnStart" -> 7, "SourceLineEnd" -> 26, 
+                   "SourceColumnEnd" -> 11, "Message" -> 
+                   
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L26,C7) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{26, 7}, {26, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L26,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L35,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"}]}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "dd7fb8d3-f3d0-4fc2-a7c1-560f1f30a4d6", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 35, 
+                   "SourceColumnStart" -> 5, "SourceLineEnd" -> 35, 
+                   "SourceColumnEnd" -> 9, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L35,C5) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{35, 5}, {35, 9}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L35,C5) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L39,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"}]}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "d14d2f60-ae18-4732-b6fc-2a727bde4da2", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 39, 
+                   "SourceColumnStart" -> 7, "SourceLineEnd" -> 39, 
+                   "SourceColumnEnd" -> 11, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L39,C7) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{39, 7}, {39, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L39,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L42,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"}]}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "6b916814-17a1-42e5-b844-177b5041280f", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 42, 
+                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 42, 
+                   "SourceColumnEnd" -> 13, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L42,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{42, 9}, {42, 13}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L42,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L46,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"}]}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "439feedb-7285-4590-8b00-a50bf9186fd6", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 46, 
+                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 46, 
+                   "SourceColumnEnd" -> 13, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L46,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{46, 9}, {46, 13}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L46,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> "Medium"], 
+                   ".\!\(\*StyleBox[\"\\\" (L58,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"}]}] :> DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "6fb7dd78-d720-48f4-bc4d-789325bf9192", 25213199, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 58, 
+                   "SourceColumnStart" -> 7, "SourceLineEnd" -> 58, 
+                   "SourceColumnEnd" -> 11, "Message" -> 
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L58,C7) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{58, 7}, {58, 11}}, ConfidenceLevel -> 
+                    0.55, "File" -> 
+                    "/Volumes/Data/Github/wl-localpackages/Kernel/LPM.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 795279524406761102, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L58,C7) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[25213199]; 
+                Null], Row[{
+                 RawBoxes[
+                  TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`], 
+                    RGBColor[1., 1., 1.], 10, {{0, 18}, {-2, 17}}}, 
+                   "SuggestionIconTemplate"]], " ", 
+                 "The headline image dimensions should usually be at least \!\
+\(\*RowBox[{\"400\", \"\[Times]\", \"400\"}]\)"}] :> 
+              DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "87cdf6f7-27ac-4656-b71a-9bb1b70d4153", 1987742438, 
+                  "HeroImageTooSmall", <|
+                  "Actual" -> {575, 323}, "Expected" -> 
+                   "\!\(\*RowBox[{\"400\", \"\[Times]\", \"400\"}]\)", 
+                   "Resize" -> {713, 400}|>]; 
+                DefinitionNotebookClient`PackageScope`seekAfter[1987742438]; 
+                Null]}, Appearance -> None, Method -> "Queued"], "BoxID" -> 
+            "WarningCountButton"], 
+           MouseAppearance[
+            Button[
+             MouseAppearance[
+              Mouseover[
+               Graphics[{
+                 GrayLevel[
+                  Rational[64, 85]], 
+                 
+                 Polygon[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                  0.42426406871192845`}, {0.42426406871192845`, 
+                  0.282842712474619}}], 
+                 
+                 Polygon[{{0.42426406871192845`, -0.282842712474619}, {
+                  0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                  0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
+                0, PlotRange -> 0.7, Background -> None], 
+               Graphics[{
+                 GrayLevel[
+                  Rational[128, 255]], 
+                 
+                 Polygon[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                  0.42426406871192845`}, {0.42426406871192845`, 
+                  0.282842712474619}}], 
+                 
+                 Polygon[{{0.42426406871192845`, -0.282842712474619}, {
+                  0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                  0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
+                0, PlotRange -> 0.7, Background -> None]], "LinkHand"], 
+             
+             With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
                EvaluationNotebook[]}, 
               CurrentValue[
                DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
@@ -10040,17 +12335,501 @@ MsGGpEvWJhFd3q99MA/17+aFR00WY+8NoC9QkZal6/Dlfw36upkdm/5+30NapfDc6kuwf8BYHLCyg=\
                   Not[
                    FreeQ[
                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                    "f9bbd44d-e3d1-46af-b087-a9e044c01753"]]]]]], Appearance -> 
-            None, BoxID -> "f9bbd44d-e3d1-46af-b087-a9e044c01753", Evaluator -> 
-            Automatic, Method -> "Preemptive"], 
-           MouseAppearanceTag["LinkHand"]], ItemSize -> All, StripOnInput -> 
-          False]}}, 
-       GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
-       AutoDelete -> False, 
-       GridBoxItemSize -> {
-        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
-     "Text", FontSize -> 12, FontColor -> GrayLevel[0.25], StripOnInput -> 
-     False]], "StripeCell", CellFrameMargins -> {{20, 5}, {2, 2}}, 
+                    "58c7e7f1-8d5d-4697-a5d1-0b80c7ed4835"]]]]]], Appearance -> 
+             None, BoxID -> "58c7e7f1-8d5d-4697-a5d1-0b80c7ed4835"], 
+            "LinkHand"]}}, 
+         ItemSize -> {{Automatic, Automatic, Automatic, Fit, 8, Automatic}, 
+           Automatic}, 
+         Alignment -> {{Left, Left, Left, Right, Right, Right}, Baseline}], 
+        Grid[{{"", 
+           Style[
+            Grid[{{"\[FilledVerySmallSquare]", "Submission result:", 
+               RawBoxes[
+                TemplateBox[{
+                  TagBox[
+                   RowBox[{
+                    TagBox["Success", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxOpener"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    FrameBox[
+                    StyleBox["\"\[Checkmark]\"", 
+                    Directive[
+                    RGBColor[
+                    0.3607843137254902, 0.596078431372549, 
+                    0.3803921568627451], 25], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    
+                    GridBox[{{
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"ResourceType\"", "\": \""}, "RowDefault"],
+                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"Paclet\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"UUID\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"8130dc54-8f6f-4040-9b96-8c72c6177286\"", 
+                    "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxCloser"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    FrameBox[
+                    StyleBox["\"\[Checkmark]\"", 
+                    Directive[
+                    RGBColor[
+                    0.3607843137254902, 0.596078431372549, 
+                    0.3803921568627451], 25], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    
+                    GridBox[{{
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"ResourceType\"", "\": \""}, "RowDefault"],
+                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"Paclet\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"UUID\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"8130dc54-8f6f-4040-9b96-8c72c6177286\"", 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Version\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"0.0.7\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"SubmissionID\"", "\": \""}, "RowDefault"],
+                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"4656\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    
+                    TemplateBox[{"\"DirectCreation\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["True", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Message\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"Your paclet resource is being published\"", 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["\"ResourceSubmission\"", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                   Short[#, 0.75]& ], 
+                  "OEM6eJztWM1u20YQtixKsmRFcRMXRXsSCKNFDwqc1LGdXlyZthIDcSJolbR\
+FUSArcigtSi6J3aUd9R166rWHvlV7bh+gj9DO8kc/lAO4sovmIF4ocP6+\
+nZ2ZbyC3IDd69PI4eAvSLckPzrgCEQpQVLGA42e3IMu9QCu4hjSeM6ncdVnu0yF+\
+IRUS2TZISTZJ5PtUjJ8BdUjhO7cot07GnPrMPg+\
+cyANtvj4xLxJQstEfhyBBvQlC4Ds7stShnoRMup1JwR+AQxAO7OyQUg/9j1Fnsw9+\
+6OHHBGHiuCjvdikHAh7YKhDzMY0ewsiClGTlqWDOvHH2rmgnWlSW1eNIqSwNtfREid9POqddwS4Qwp\
+uOCLg65U4PZBAJG0i1c3rMlE9DSbbSxKDRSzwnCA1eQzkBj47BkY0kRCfits74u7Jj9EUEk2PU2mEI\
+VFCOyTdeBHwqqR5TCUSNPXDXcmevnl5QL6KYGVltRyrw8YrtibR8DmoUOKTWFYC5VexixmnbY0PuA1\
+dZQmXZAl0p2XuqeubTIRD2I2DGKmnGJlZzcUt95oMUa/FT/2ryBQ3rViQEOn6NgIHc6WB+LRo+\
+AzYcaQilbnCJMQtyuz2QgRcpmNWXd87pkDOX2XENW3/jdW90BPXjSy3KjTg9unxL5h+//Gyiw+\
+oJE1gz+swo7z09tgIvEOKj+PntSNyPnz+PxDfx8/\
+uR9fHkxHWiBAtf8jMeRmpaxYmwYSF0BNaljsP4MC+uxbBiPLl7rMeScyqGjMvZMtZva81ay/9+\
+N5bytNgzP4XJO+vtYr63802WmpKGmZW5rlCTGOaXTZPU0M0JuDTyFPkwLfkzBX6b8yAZJaT410+/\
+zoyODbNLbQ+UOZkdWv8myMrmq1dnJ8sj+tQ8fPjFrmM/\
+3msduvtua293b7f1ZPBkv3VoHzyy9x8eHDw63M/hzTK/\
+laZ4oVMyDVLBmop8LmeOmDSF8RzcqZqBuBd1rmjYmv6EUwQU5MvqbgpGI4xb8dpYFuNcH1AWlYTU1r\
+V+7ajW+r8PNjPnjNyc2yaj4FI3Ah9aIxyStp5T+\
+RRtvoiQWAQ22A8LsgYOdmxZnAhM6gFSnN5y7HrMFX2bNG3e9D8ug2I/CN/fAtjSd+\
+IxDt1AspTMkgsuWIWJVsJk/wsDW14gl2bg/OheUfCKgpeg4MqKgm+Zgm+At2q+\
+xgZCIMtDrpi7D3YfHNwepoZJooHPpIZ1k1yWzb39x7eYqy0z6VBLQBxveWQxA9ziHZ4jD+PEWx7Q5+\
+a32E7NMO6Gpkibq8lkcwA4MpphNPCYHIFze9ksmShfHvH2ZARMi2W1ma4209VmusRmOt2S8kvfFTvV\
+jHtST/tNr6tefq28P/cHWLIWZQshKXyP6pN/z+\
+4tNnO73CL1WZon5YSsW8TQHEt2rsOULVJJCY6UYppqacxTdiGG5ogWacyP9mRHR+\
+N0spLPrjkfpxWQ/AlHB95CBWycOuxKwb3E5mumRunKJhMg/wBf+PQ1"}, 
+                 "ClickToCopyTemplate"]]}, {
+              "\[FilledVerySmallSquare]", "Resource object:", 
+               RawBoxes[
+                TemplateBox[{
+                  TagBox[
+                   RowBox[{"ResourceObject", "[", 
+                    ButtonBox[
+                    TagBox[
+                    GridBox[{{
+                    GraphicsBox[{
+                    Thickness[0.0025], {
+                    FaceForm[{
+                    RGBColor[
+                    0.9607843137254902, 0.5058823529411764, 
+                    0.19607843137254902`], 
+                    Opacity[1.]}], 
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}}}, {{{205., 22.660200119018555`}, {205., 
+                    212.11320304870605`}, {246.01799774169922`, 
+                    235.79520988464355`}, {369.0710144042969, 
+                    306.8401927947998}, {369.0710144042969, 
+                    117.38719749450684`}, {205., 22.660200119018555`}}, {{
+                    30.928985595703125`, 306.8401927947998}, {
+                    153.98200225830078`, 235.79520988464355`}, {195., 
+                    212.11320304870605`}, {195., 22.660200119018555`}, {
+                    30.928985595703125`, 117.38719749450684`}, {
+                    30.928985595703125`, 306.8401927947998}}, {{200., 
+                    410.22620964050293`}, {364.0710144042969, 
+                    315.5001964569092}, {241.01799774169922`, 
+                    244.45519828796387`}, {200., 220.77320671081543`}, {
+                    158.98200225830078`, 244.45519828796387`}, {
+                    35.928985595703125`, 315.5001964569092}, {200., 
+                    410.22620964050293`}}, CompressedData["
+1:eJxTTMoPSmViYGCQAWIQDQQPlDrLHYB0n8ffYgewSEAmhO9aBaJ/1cmB+XqT
+gsF8tsaHGch8BoYNGcjqGS7lmqOYd/qhKYg+9+8dhH/prQmI9ptyBYV/jmEH
+Cj+CeUEMMr9iq24MsnkV3Eeike2b8aQrGtk9DSrhyiA6e88JMD/BvUgJbG/S
+EzBfQYpBCaKeIROZv2muNDK/YaqzeSayflj4wMyHhR/M/oDHC8uR3fdAaWM5
+svthfJj/YHyY/2F8WPjAzIOFH0p8AQA7u3Ea
+                    "]}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.5529411764705883, 0.6745098039215687, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{43., 198.67381286621094`}, {107.71399688720703`, 
+                    161.3118133544922}, {107.71399688720703`, 
+                    86.58680725097656}, {43., 123.94882202148438`}, {43., 
+                    198.67381286621094`}}}]}, {
+                    FaceForm[{
+                    RGBColor[0.3137254901960784, 0.4549019607843137, 
+                    0.611764705882353], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{182.77679443359375`, 198.67381286621094`}, {
+                    182.77679443359375`, 123.94882202148438`}, {
+                    118.06279754638672`, 86.58680725097656}, {
+                    118.06279754638672`, 161.3118133544922}, {
+                    182.77679443359375`, 198.67381286621094`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.7803921568627451, 0.8627450980392157, 
+                    0.9490196078431372], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{112.8884048461914, 244.9990997314453}, {
+                    177.60240173339844`, 207.63610076904297`}, {
+                    112.8884048461914, 170.27410888671875`}, {
+                    48.174407958984375`, 207.63610076904297`}, {
+                    112.8884048461914, 244.9990997314453}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6901960784313725, 0.5882352941176471, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{130.02911376953125`, 350.11590576171875`}, {
+                    194.80210876464844`, 312.7189064025879}, {
+                    194.80210876464844`, 237.92591094970703`}, {
+                    130.02911376953125`, 275.32291412353516`}, {
+                    130.02911376953125`, 350.11590576171875`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.4627450980392157, 0.3607843137254902, 
+                    0.611764705882353], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{269.9334716796875, 350.11590576171875`}, {
+                    269.9334716796875, 275.32291412353516`}, {
+                    205.1604766845703, 237.92591094970703`}, {
+                    205.1604766845703, 312.7189064025879}, {269.9334716796875,
+                     350.11590576171875`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.8862745098039215, 0.803921568627451, 
+                    0.9529411764705882], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{199.98130798339844`, 396.48345947265625`}, {
+                    264.7543029785156, 359.0864601135254}, {
+                    199.98130798339844`, 321.69046783447266`}, {
+                    135.20831298828125`, 359.0864601135254}, {
+                    199.98130798339844`, 396.48345947265625`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6627450980392157, 0.803921568627451, 
+                    0.5686274509803921], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{217.61199951171875`, 199.13890075683594`}, {
+                    281.8990020751953, 162.0229034423828}, {281.8990020751953,
+                     87.7908935546875}, {217.61199951171875`, 
+                    124.90690612792969`}, {217.61199951171875`, 
+                    199.13890075683594`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.43137254901960786`, 0.6039215686274509, 
+                    0.34509803921568627`], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{356.46661376953125`, 199.13890075683594`}, {
+                    356.46661376953125`, 124.90690612792969`}, {
+                    292.1796112060547, 87.7908935546875}, {292.1796112060547, 
+                    162.0229034423828}, {356.46661376953125`, 
+                    199.13890075683594`}}}]}, {
+                    FaceForm[{
+                    RGBColor[0.8549019607843137, 0.9450980392156862, 0.8], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{287.039306640625, 245.15859985351562`}, {
+                    351.32630920410156`, 208.0426025390625}, {
+                    287.039306640625, 170.92660522460938`}, {
+                    222.75230407714844`, 208.0426025390625}, {
+                    287.039306640625, 245.15859985351562`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6627450980392157, 0.803921568627451, 
+                    0.5686274509803921], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    356.46649169921875`, 215.76849365234375`}, {
+                    296.2834930419922, 250.5924949645996}, {
+                    356.46649169921875`, 285.26649475097656`}, {
+                    356.46649169921875`, 215.76849365234375`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6627450980392157, 0.803921568627451, 
+                    0.5686274509803921], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    217.61199951171875`, 114.06449890136719`}, {
+                    277.7949981689453, 79.24049758911133}, {
+                    217.61199951171875`, 44.566497802734375`}, {
+                    217.61199951171875`, 114.06449890136719`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.5529411764705883, 0.6745098039215687, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    122.17269897460938`, 78.36309814453125}, {
+                    182.42269897460938`, 113.07109832763672`}, {
+                    182.35969924926758`, 43.614097595214844`}, {
+                    122.17269897460938`, 78.36309814453125}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.5529411764705883, 0.6745098039215687, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    103.52159881591797`, 249.46669006347656`}, {
+                    43.27159881591797, 214.7586898803711}, {
+                    43.334598541259766`, 284.21569061279297`}, {
+                    103.52159881591797`, 249.46669006347656`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6901960784313725, 0.5882352941176471, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    120.86710357666016`, 350.61541748046875`}, {
+                    120.80010357499123`, 281.0834197998047}, {
+                    60.68010330200195, 315.86641693115234`}, {
+                    120.86710357666016`, 350.61541748046875`}}}]}, {
+                    FaceForm[{
+                    RGBColor[
+                    0.6901960784313725, 0.5882352941176471, 
+                    0.8117647058823529], 
+                    Opacity[1.]}], 
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    278.3727111816406, 281.2159118652344}, {
+                    278.43971118330956`, 350.74790954589844`}, {
+                    338.5597114562988, 315.9649124145508}, {278.3727111816406,
+                     281.2159118652344}}}]}}, {
+                    ImageSize -> 12, BaselinePosition -> Scaled[0.1], 
+                    ImageSize -> {Automatic, 35}}], 
+                    StyleBox["\"JerryI/LPM\"", FontFamily -> Dynamic[
+                    CurrentValue["PanelFontFamily"]], FontSize -> 
+                    0.8 Inherited, ShowStringCharacters -> False, 
+                    StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.25}}, "Rows" -> {{0}}}], "Grid"], 
+                    ButtonFunction :> {}, Evaluator -> None, Active -> False, 
+                    Alignment -> Left, 
+                    Appearance -> {
+                    "Default" -> 
+                    FrontEnd`FileName[{"Typeset", "SummaryBox"}, 
+                    "Panel.9.png"]}, FrameMargins -> {{3, 3}, {3, 0}}, 
+                    BaseStyle -> {Deployed -> False}, 
+                    DefaultBaseStyle -> {Background -> None}, 
+                    BaselinePosition -> Baseline, Method -> "Preemptive"], 
+                    "]"}], Short[#, 0.75]& ], 
+                  "OEM6eJztHGtsHMX5znc+v50HKVWB0tPGpaHFjvMOSOXOPr9C4+\
+TwOgRIAl7fzdmL93YvM3u2L5WQW6AShaZpgUJpCaYtiPKjAqRKgQJ2RCuKUGlFA01LCw7hFaUkUcUj\
+IFo6M7uzO7t3Z28c16HoRpE3M/PNfI/5vplvv2/\
+2Un5U2SONtGqjAKXK0aINqg5gBgJd0mVNxc0pPwr1aAQgFUTBjTLSU2Uo1CsN4BaxvgcgLQsTYHP/\
+dSChizViNp2WYK4LSEnRvy0VQAvbcqqUlhPdWjKrADJLmTVLQAQ6qu/NZQACep+\
+WAWpDAyrvkBQEWO8S1gvS/\
+SApYqpAQ4NY3oPnz2GYml6Qzii40SDUmDiAFsQlFYhAwSRp0Ikz2IPJYEjKUUUnlJPOwexZQSYhXSF\
+U1ZrVdSaNapMjY95zOtrjUB7GJPR1QE3V29Ukk4lY1dHeKutpKYPEhaZg8KDNmE8ACfGElDagSDmQR\
+PUGio6smiCCLyadYC/\
+MAouN6pZMBkhQUhMABTdpqt1T1SohIOo5BaR8Lt6r2oclJSthyaCqlqyupfFKJ6zeUDfQB7WkWB2HA\
+MtWl4e5SVsUeUBNA1VnAkWhGCAKw5426Ia0NABEeRfAEqswJWaNcuAt75XTAEEfLbVRqwUPrI1lIcQ\
+TX4EJBmJdB5ZvTMp0AXlgkJBQHtdGME4/WtLSjzQlqwMeHtV1SwOqnJITVJVjn+\
+A1raQiMVauphNKmUE5gUh1kSkkP6rqxW1DKkAIfnPJrzoP7UpGLPXBttIhJUCHBtNWG560p7M1pika\
+hBNPkXIsAptpmYrAL9DybIRIYXNGSsh6zuT0BJm2vkNWFJDEZA8DzsL2+8rKA74yn89v/\
+yvSFnK3Gc11pNkfCOCa66+\
+raqFcWhYqo4SNy1H8d6rsl2ujXH37vTdcR56Z2yZVWoe5NIUTFo2Qp7qzEfH1g89cuSPqns9C8sI7l\
+/KD9iiRBD+pz9c3yCNldYsoc7yFhJ8PI6kwOPFRzLv3/jxnULZ/mDyf9+1DBidhysnHe3arUQ7+\
+vKfuGjKIejXh6D/yfgs/3jE/RnpeGUVyM2V/d9e/TaC4AdTVvos8P7r+fFpv+\
+qFI66FvHRrk6z7fw4M8vO+F9DrHfM8dWkOJ+M8xZHK+mjw33X7AUbeINOtXBsa38/XRXzdu5+\
+cbrfntNh7fXa9/dxtPz1jD1qXkOfTE72m9rxMKFG//\
+67QePscn8EJh9UfvOZevj90RWyfz45l82PxMfgx//PB9Izx9U8IjIzz9rM74Y3XGP6sz+bD5mPwc6+\
+XZzh99hJRDEfijO0h5IwI/+pCUIx7tfL8v4A86DHf/0oC/\
+3NDasXZK2PdfNAT76DtXU4F9dGGSr0d3378lysGPPfbxNVH3eM8MLaHlQAR+kZZ/RODtt5Fy+\
+PQZGnv5YIpniNUZwVPBG3fwDLE6Y9gx3jNDH54k5e0I/OlPSDkagdfQcuz0GRp/\
+eT1VtfGT99J9YapjFSXwxNXvUlVm/WO/6wJ0RcSzuwr10/\
+GeGTqbljcj8M8vkPLaHKrc2LFoHyFo8m+HspShh66iK/\
+WLsVsQX19435N0d2bwD351zc6oe7xnhvbeQwrWtM/T8pe5VLnjr2R4hlidETwu3C/\
+zDLE6Y9gx3jND22n5ZwQ+/hgpRyLwelrmQOWmUp/QFYg+8cwoJXjRrZTAhv6d9Ehj/ctqz9UpAw+\
+92Veon473zNAaWt7gGFpJy2tzsEJ3rKJn7NRO4/iI9+81VuY30SRf9+\
+39F90UGPxk9SXXRt3jPTNk7AUvR6BIy+GIaVUvnT5D0ZHOYZ4hVmcEP/xqK+\
+QZYnXGsGO8Z4a20YI3t0tpwY7n3T8mZS7OoftO0BWInnU/3eX2rH+P2pJvh99wycz+\
+yQd20F1uavHBoUL9dPy8qlzAZohwEyTcTA4b4h278ySlrvnmG6n4973Xo0W5/j2xAzujbvgzTr2l/\
+eEb6ckR37edUhlP/lHkrcF3Q1dH1A0/r05NQerrbjE8k6/fSamd/M4fjAP91jbKzYPffo7WJ+9+\
+3vBkePgzTv2UdOgqQk34eJOhKU//jFLZ3HmQalL4wEO0PoqepmvigJ/X070Q9ePXr6OynDx4hFjv+\
+BurV9H6w1t+YOy3dVs3kefBvz9JTz4H/Jmn/n1AqezTbyPPu+qrBmg988FRuhfd/u4y+uzKTBjU8/\
+CpClfco6YFZUBC7yHRgJjfag62jOJ3fSvqZAZWWqXE0ADUsmrSFVgp74BS2h1tqaaNvXJiCLnjMHYc\
+pEDwwxEamb84iCfiYkstuLqYlBgELFzillWtqEM5s1ndoGayOusM2ZG1gL0OpjaxeKLdw+\
+KJlcImLMhLwoL4OTNgtkEH6RZV1Yx4pBg4/\
+r1xG577X4FQnolQrBUuAxDPtHxjvFvAlFlBILFaWDbc3NTctOJCgVtLLN0OvCZKTsSE9mu6ZvVVkj5\
+TXubilJHwKSFNUmK1sTosU3UQQFkHSWvUEnFQGyFCUgdigxKUEiRg5pZiFV1UYk4kBoVlndsIhoFiH\
+uiHItOLm3UuNGWQF6hjEGIFxpFNq8iSkvnEf0HKBgviJcqHqSRRRUXmNZ/\
+oSxtQgA7ctCwwaSEryOvYzKTkhyWL0FMgfsmwimTXUQcQrw3TYjUN708RMUimsELZhHxOQ8sEwd3lR\
+a1JGNezWmP4uJTAMnWiwlC7H/eEb4HQBlACqwmZ3DvaZcJWTUnhrSy8UVIHsnhvCG/\
+UEpISxtQMkVq3pOIHLELWfGhggRX/9KugV6yxslNHxgX6g0403vadmk3ZdD+A3RIcyuurj+\
+OxehyChIzIyRGwV5lOnVN1aZTizhv6P1aDQK+W+fQqwEK2TcY1JJvZHGOB/\
+bzjQVM5ZyQFFVM0NOsUlNtVKuWgSjmoUg6qlIMq5aBKOahSDqqUg5rdCpVyUKUcVCkHVcpBlXJQpRx\
+UKQdVykGVclClHNTc5aBqSjmoUg6qlIP67OegZiSrVvgGyI1oMIlmY+GuL07M6UX/\
+RWJAuEjAtmxSiQRxESZhq6wPiiCD7Y1EulE5NkKoOwn3eaJ6kdCmJbLEmKRTEqebYLYdXSYM6noGXb\
+J8OTQzBahpxJB7QtGyyaaEll5urH8PyJAshgZzNuxybjMTu+\
+ZqKrG2C2soxLY9tKVn42zEtETYDOUBGe+D4R68H+CNwrvi1QmrVoQvyyrhlc0rVwmzW6SNWMxID2/\
+JJPF/5hN1pbBly4Y27xgvENavWNWcTKxZ3bg+\
+tTbVuLp5dXPjxf0Xr21cn1i3MrF2xbp1K9evnRUpiwV6UifDw/\
+iEOSXTrxDoOThLrKbsZ4l1TVGsti1V4LOX+FhGkiT/\
+wzaTKiRY2bccwnPFFBnbbR9L0fVrow0NaOm0MEkZZRoaUmYC7svTz0eTdhi6EoWMBB4eV9WtZRHQsD\
+AwpSFKNfUFyKni9k0wRCXzq7ALY+Wg7PPfOJXeJp50dQuE2sggkJL24WXyDb9009HL953/\
+YsRwbM1pHBkuPD6uKbkBI48ZdNIR+8RENGUlu2K+mC+/\
+e6LACJ5GLnu2ipanSWs5pZxQ1Ap2yQBSx999Ock6gM2RhyOunrcnpukx/KS/\
+TpwqNmvOCfeckWl6TGy2V1bwLcL2r2P1dmNc0fBLiDrgcIgMkdqrh8WbouXNCPZYy6nHKoaMzU2saZ\
+MlRRsw0rsOB1JUJBU7hXFFklWPruWzNhOeXN9Yjd3GnCxr6ayu+\
+h7y7oT7eqSknEXc9QXjXcmgvbCmW54uheyWID5VUJ6wAsacpqqWzdLW8l9jX2IR6bci8FpajpeMr2R\
+8c2B8vK6dR8sTEXjvXlJeicCTH5Dy1hm0Ro+2MFvzXBzT0hlCR/toBrugiLvm4vFELmzW/\
+Ef0hVwDmzKK6/xpcQ1TLaCAX5sWEJouTbeEX8dHU7UuopxKe4KZqc/n6vH5+\
+LiYcyzdVW46Gskzf9v4GUgRvDbERNFZi421KXPjLcCNG+/EzHgnivE7MTO/+\
+WMZqTPLeWa87g2uADdFISIzczOzBhTnZmYNKM7NzBpQkJvqzdiTVaQcb0rlqKZFldOS+\
+QsPdhhzJutiB0HMH6vlYrCL7Xts7Qogr9oo79ragjaQkrKK3paFRhzTHp4fx6SX/\
+YLOM7gMndMJtDTA9proxbhQSoNp65c2zqDz7V7uvAWxVCRPrU8UNRZutpldhErKnEFoPXduF/\
+iEYM4chVngPE13wXkRMS7BU9vjZ9Tt+XBHrBM9hh0AjD4uJcm5bmNz3Co9y3EYGtmA/\
+Pug9lVRV6y0SODfcolqqEuE0b829sCMflFogy4p/OXpIm8lvA3MkR+EXD+\
+Vg0Gbpl3LLHX1GAjWSC9xBbHBS1znVFwer9GHAivpXuSF5u5ZHGKau8SeLgyHLs+\
+CLJf1qOjVNEWXM+JXOoEe1gdBWHFEicJaCrfKKMzCkXl3q/\
+EM1KvzJqtaUZfUpASTZprSeb16gyrrWD/\
+lXdSg8QYzjTfqYa2x9OpMqZjnx9wvK16FrKLMyqSL7g4FPHfjRdNop3tUfjv/klDG2So+ZW2g/\
+Iv3fhQSE5ICkvk2XSiJVSAIWPqqpfRVyzypwf/zVy2c/+36YKSA+8FNL9aaFkc+dTmlnUb07yBum/\
+NYbQk1ikGSvxer7cQSbiLpEW+\
+HY6NYy6YkfIghI3fVKFZcYRwaYjlNUzRib8NOcIoXeEtbNoqL7SwYgTB3qQDJeK1jmbSRkZH8HJrWf\
+52dNqOb9nIpIy9f0dRs64zxm3dSv5KnM5XtSblgx2JjDElVmjs2Mj5N+i/qtVuE"}, 
+                 "ClickToCopyTemplate"]]}}, Alignment -> Left, 
+             ItemSize -> {{Automatic, Automatic, Fit}, Automatic}], FontColor -> 
+            GrayLevel[0.5], FontSize -> 12]}}, 
+         ItemSize -> {{Automatic, Fit}, Automatic}, Alignment -> Left, 
+         Dividers -> {None, {-1 -> GrayLevel[
+              Rational[239, 255]]}}, Spacings -> {{1, {}, 1}, {1, {}, 2}}]}, 
+       Dynamic[
+        CurrentValue[
+         EvaluationCell[], {TaggingRules, "StripeOpen"}, False]]]], "Text", 
+     FontSize -> 12, FontColor -> GrayLevel[0.25], StripOnInput -> False]], 
+   "StripeCell", CellFrameMargins -> {{20, 5}, {2, 2}}, 
    CellFrame -> {{0, 0}, {1, 0}}, CellFrameColor -> GrayLevel[0.75]]},
 TaggingRules->{"CompatibilityTest" -> HoldComplete[
     BinaryDeserialize[
@@ -10105,8 +12884,7 @@ Fu6DuJJG2H9mK2QZ3X1Y8rjKVdsLU11Qbnfn/Mae/TiO1RZHs2bny+6Vwq5Sfi8TnHKi+1+K4NOh"]\
       186, 85, 185, 190, 72, 112, 187, 5, 66, 23, 76, 4, 0, 158, 229, 82, 
       32}], "LastBuiltArchive" -> 
     "/Volumes/Data/Github/wl-localpackages/build/JerryI__LPM-0.0.7.paclet"}, 
-  "StatusMessage" -> ProgressIndicator[Appearance -> "Necklace"], 
-  "TryRealOnly" -> False},
+  "StatusMessage" -> "", "TryRealOnly" -> False},
 CreateCellID->True,
 FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (February 4, 2022)",
 StyleDefinitions->Notebook[{
@@ -11611,6 +14389,7 @@ AsyncronousResourceInformationUpdates = False,
                     Null]; Null]]], "\"Advanced\"" :> 
               With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                 Quiet[
+                 
                  Block[{$ContextPath = RSNB`$cp$, 
                    ResourceSystemClient`$\
 AsyncronousResourceInformationUpdates = False, 
@@ -13185,6 +15964,7 @@ Ca2MUA==
           FaceForm[
            GrayLevel[1.]]], 
          StyleBox[{
+           
            FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}}}, {{{
             13.57129, 13.35693}, {12.979560000000001`, 13.357063}, {12.49995, 
             13.836817}, {12.49999, 14.42855}, {12.50003, 15.020283}, {
@@ -15940,8 +18720,8 @@ AsyncronousResourceInformationUpdates = False,
                     DefinitionNotebookClient`$ButtonCodeID = 
                     341138948110023950; 
                     DefinitionNotebookClient`CheckForUpdates[RSNB`nb$, 
-                    ReleaseHold[
-                    DefinitionNotebookClient`$ButtonCode = HoldForm[
+                    ReleaseHold[DefinitionNotebookClient`$ButtonCode = 
+                    HoldForm[
                     
                     PacletResource`DefinitionNotebook`\
 RefreshNotebookPacletFiles[RSNB`nbo, RSNB`cell]]]], 
@@ -16739,6 +19519,7 @@ directory.\""}, "PacletDirectoryChooserErrorTemplate"]], "AttachedMessage"],
                     Quiet[
                     
                     Block[{$ContextPath = RSNB`$cp$, 
+                    
                     ResourceSystemClient`$\
 AsyncronousResourceInformationUpdates = False, 
                     DefinitionNotebookClient`$ButtonCodeID = None}, 
@@ -17241,6 +20022,7 @@ directory.\""}, "PacletDirectoryChooserErrorTemplate"]], "AttachedMessage"],
             GraphicsBox[{
               Thickness[0.028571], 
               StyleBox[{
+                
                 FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {
                   0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1, 3,
                    3}, {0, 1, 0}, {1, 3, 3}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 
