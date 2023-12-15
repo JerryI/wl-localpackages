@@ -21,6 +21,35 @@ PacletRepositories[{
 It overrides all installed paclets and let Mathematica find them in `wl_packages` folder in your project.
 Everything is done automatically and does not mess with `Needs` you have.
 
+## Releases, branches?
+By the default it looks for the latest release and downloads it, otherwise just `master` branch will be downloaded
+```mathematica
+PacletRepositories[{
+    Github -> "https://github.com/KirillBelovTest/HTTPHandler"
+}]
+```
+
+### Branches
+One can specify which branch should be downloaded
+PacletRepositories[{
+    Github -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
+}]
+
+## Bypass any checks
+Using a special option
+
+```mathematica
+PacletRepositories[{
+    Github -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
+}, "Passive"->True]
+```
+
+will ignore any changes made to repos list and updates and directly load all local packages into WL.
+
+## Offline work
+In the case of no internet connection possible, it will use local files
+
+
 ## Install once and be happy
 It ships via standart wolfram paclet system. Install it once and forget about `PacletInstall` command forever
 ```mathematica
