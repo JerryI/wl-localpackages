@@ -31,9 +31,12 @@ PacletRepositories[{
 
 ### Branches
 One can specify which branch should be downloaded
+
+```mathematica
 PacletRepositories[{
     Github -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
 }]
+```
 
 ## Bypass any checks
 Using a special option
@@ -52,6 +55,7 @@ In the case of no internet connection possible, it will use local files
 
 ## Install once and be happy
 It ships via standart wolfram paclet system. Install it once and forget about `PacletInstall` command forever
+
 ```mathematica
 PacletInstall["JerryI/LPM"]
 << JerryI`LPM`
