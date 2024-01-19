@@ -33,16 +33,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       Return[Null, Module];
     ];
 
-    (* fetching new information from Github for each repo in the list *)
-    repos = If[!AssociationQ[#], Missing[], #] &/@ FetchInfo /@ repos;
-
-    repos = repos // DeleteMissing;
-
-    (* fetching cached data (current status of all packages in the project) *)
-    Echo["LPM >> checking cached"];
-    cache = CacheLoad[projectDir];
-
-    If[FailureQ[PingTime["github.com"]],
+    If[FailureQ[ URLFetch["https://github.com"] ],
       Echo["LPM >> ERROR! no internet connection to github.com!"];
       
       If[!MissingQ[cache], 
@@ -54,6 +45,17 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
         Abort[];
       ];
     ];
+
+    (* fetching new information from Github for each repo in the list *)
+    repos = If[!AssociationQ[#], Missing[], #] &/@ FetchInfo /@ repos;
+
+    repos = repos // DeleteMissing;
+
+    (* fetching cached data (current status of all packages in the project) *)
+    Echo["LPM >> checking cached"];
+    cache = CacheLoad[projectDir];
+
+
 
     (* if there is no cache -> *)
     If[MissingQ[cache], 
