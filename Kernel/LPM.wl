@@ -24,7 +24,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     ];
 
     If[!FileExistsQ[projectDir],
-      CreateDirectory[projectDir];
+      CreateDirectory[projectDir, CreateIntermediateDirectories->True];
       If[!FileExistsQ[projectDir], Echo["LPM >> Cannot create project directory by path "<>projectDir<>" !!!"]; Abort[] ];
     ];
 
