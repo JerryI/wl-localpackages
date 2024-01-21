@@ -23,6 +23,11 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       If[!StringQ[projectDir], Echo["LPM >> Sorry. cannot work without project directory. Save your notebook / script first"]; Abort[]];    
     ];
 
+    If[!FileExistsQ[projectDir],
+      CreateDirectory[projectDir];
+      If[!FileExistsQ[projectDir], Echo["LPM >> Cannot create project directory by path "<>projectDir<>" !!!"]; Abort[] ];
+    ];
+
     Echo["LPM >> project directory >> "<>projectDir];
     Echo["LPM >> fetching paclet infos..."];
 
