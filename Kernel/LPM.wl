@@ -31,7 +31,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     Echo["LPM >> project directory >> "<>projectDir];
     
 
-    If[KeyExistsQ[FileNameJoin[{projectDir, ".wl_timestamp"}] ] && !OptionValue["ForceUpdates"],
+    If[FileExistsQ[FileNameJoin[{projectDir, ".wl_timestamp"}] ] && !OptionValue["ForceUpdates"],
       With[{time = Get[ FileNameJoin[{projectDir, ".wl_timestamp"}] ]},
         If[Now - time < OptionValue["UpdateInterval"],
           skipUpdates = True;
