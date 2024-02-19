@@ -37,7 +37,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
           skipUpdates = True;
           
         ];
-        Echo[StringJoin["LPM >> last updated >> ", time // ToString] ];
+        Echo[StringJoin["LPM >> last updated >> ", time // TextString] ];
       ]
     ];
 
