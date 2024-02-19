@@ -9,7 +9,7 @@ Begin["`Private`"]
 JerryI`LPM`Private`Version = 12
 pacletDirectoryLoad = PacletDirectoryLoad
 
-PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, repos, cache, updated, removed, new, current, updatable},
+PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, repos, cache, updated, removed, new, current, updatable, skipUpdates = OptionValue["Passive"]},
     (* making key-values pairs *)
     repos = (#-><|"key"->#|>)&/@list // Association;
 
@@ -29,14 +29,24 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     ];
 
     Echo["LPM >> project directory >> "<>projectDir];
-    Echo["LPM >> fetching paclet infos..."];
+    
+
+    If[KeyExistsQ[FileNameJoin[{projectDir, ".wl_timestamp"}] ] && !OptionValue["ForceUpdates"],
+      With[{time = Get[ FileNameJoin[{projectDir, ".wl_timestamp"}] ]},
+        If[Now - time < OptionValue["UpdateInterval"],
+          skipUpdates = True;
+          Echo[StringJoin["LPM >> last updated >> ", time // ToString] ];
+        ]
+      ]
+    ];
 
     (* PASSIVE mode :: skips all checks and just loads wl_package folder *)
-    If[OptionValue["Passive"], 
-      Echo["LPM >> PASSIVE MODE"];
+    If[skipUpdates, 
       Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
       Return[Null, Module];
     ];
+
+    Echo["LPM >> fetching paclet infos..."];
 
     If[FailureQ[ URLFetch["https://github.com"] ],
       Echo["LPM >> ERROR! no internet connection to github.com!"];
@@ -96,11 +106,13 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     (* update local cache file aka packages.json *)
     CacheStore[projectDir, repos];
 
+    Put[Now, FileNameJoin[{projectDir, ".wl_timestamp"}] ];
+
     (* finally load dirs *)
     Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
 ]
 
-Options[PacletRepositories] = {"Directory"->None, "Passive"->False}
+Options[PacletRepositories] = {"Directory"->None, "Passive"->False, "ForceUpdates" -> False, "UpdateInterval" -> Quantity[7, "Days"]}
 
 CacheStore[dir_String, repos_Association] := Export[FileNameJoin[{dir, "wl_packages_lock.wl"}], repos]
 CacheLoad[dir_String] := If[!FileExistsQ[FileNameJoin[{dir, "wl_packages_lock.wl"}]], Missing[], Import[FileNameJoin[{dir, "wl_packages_lock.wl"}]]];
