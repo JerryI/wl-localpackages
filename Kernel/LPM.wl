@@ -35,8 +35,9 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       With[{time = Get[ FileNameJoin[{projectDir, ".wl_timestamp"}] ]},
         If[Now - time < OptionValue["UpdateInterval"],
           skipUpdates = True;
-          Echo[StringJoin["LPM >> last updated >> ", time // ToString] ];
-        ]
+          
+        ];
+        Echo[StringJoin["LPM >> last updated >> ", time // ToString] ];
       ]
     ];
 
