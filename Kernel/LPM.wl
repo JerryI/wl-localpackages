@@ -11,20 +11,20 @@ pacletDirectoryLoad = PacletDirectoryLoad
 
 
 convertVersion[str_String] := ToExpression[StringReplace[str, "."->""]]
-convertVersion[number_?NumericQ] := number
-convertVersion[any_] := convertVersion[any["Version"]]
+convertVersion[any_PacletObject] := convertVersion[any["Version"]]
 
 
-inspectPackages[dir_String] := Module[{
+inspectPackages[dir_String, cbk_] := Module[{ 
   packages
 },
   packages = Get /@ FileNames["PacletInfo.wl", {dir}, {2}];
 
   With[{found = SortBy[PacletFind[#["Name"] ], convertVersion]},
+
     If[Length[found] > 0,
       With[{conflicting = found // Last},
         If[convertVersion[conflicting] > convertVersion[#],
-          Echo[StringTemplate["LPM >> Conflicting version! Globally installed `` vs locally loaded ``"][convertVersion[conflicting], convertVersion[p] ] ];
+          Echo[StringTemplate["LPM >> Conflicting version of ``! Globally installed `` vs locally loaded ``"][#["Name"], convertVersion[conflicting], convertVersion[#] ] ];
           cbk[conflicting, #];
         ]
       ]
