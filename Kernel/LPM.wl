@@ -6,7 +6,7 @@ Github::usage = "internal name to specify the source of the package"
 
 Begin["`Private`"]
 
-JerryI`LPM`Private`Version = 12
+JerryI`LPM`Private`Version = 15
 pacletDirectoryLoad = PacletDirectoryLoad
 
 
@@ -24,7 +24,7 @@ inspectPackages[dir_String, cbk_] := Module[{
     If[Length[found] > 0,
       With[{conflicting = found // Last},
         If[convertVersion[conflicting] > convertVersion[#],
-          Echo[StringTemplate["LPM >> Conflicting version of ``! Globally installed `` vs locally loaded ``"][#["Name"], convertVersion[conflicting], convertVersion[#] ] ];
+          Echo[StringTemplate["LPM >> Conflicting version of ``!!! Globally installed `` vs locally loaded ``"][#["Name"], convertVersion[conflicting], convertVersion[#] ] ];
           cbk[conflicting, #];
         ]
       ]
@@ -39,11 +39,11 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     (* locating project directory *)
     If[OptionValue["Directory"]//StringQ,
       projectDir = OptionValue["Directory"];
-      If[!StringQ[projectDir], Echo["LPM >> Sorry. wrong folder!"]; Abort[]];
+      If[!StringQ[projectDir], Echo["LPM >> Sorry. This is a wrong folder!"]; Abort[]];
     ,
       projectDir = NotebookDirectory[];
       If[!StringQ[projectDir], projectDir = DirectoryName[$InputFileName]];
-      If[!StringQ[projectDir], Echo["LPM >> Sorry. cannot work without project directory. Save your notebook / script first"]; Abort[]];    
+      If[!StringQ[projectDir], Echo["LPM >> Sorry. We cannot work without a project directory. Save your notebook / script first"]; Abort[]];    
     ];
 
     If[!FileExistsQ[projectDir],
@@ -60,7 +60,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
           skipUpdates = True;
           
         ];
-        Echo[StringJoin["LPM >> last updated >> ", time // TextString] ];
+        Echo[StringJoin["LPM >> updated last time >> ", time // TextString] ];
       ]
     ];
 
@@ -71,7 +71,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       Return[Null, Module];
     ];
 
-    Echo["LPM >> fetching paclet infos..."];
+    Echo["LPM >> fetching packages info..."];
 
     If[FailureQ[ URLFetch["https://github.com"] ],
       Echo["LPM >> ERROR! no internet connection to github.com!"];
@@ -194,7 +194,7 @@ FetchInfo[a_Association, Rule[Github, url_String]] := Module[{new, data},
   (* extracting from given url *)
   new = StringCases[url, RegularExpression[".com\\/(.*).git"]->"$1"]//First // Quiet;
     If[!StringQ[new], new = StringCases[url, RegularExpression[".com\\/(.*)"]->"$1"]//First];
-    Echo["LPM >> fetching releases info by "<>new<>" on a Github..."];
+    Echo["LPM >> fetching releases info for "<>new<>" on a Github..."];
 
   (* here we FETCH GITHUB API RESPONCE and use releases metadata *)
   data = Import["https://api.github.com/repos/"<>new<>"releases/latest", "JSON"] // Association // Quiet;
@@ -216,7 +216,7 @@ Module[{new, data},
   (* extracting from given url *)    
     new = StringCases[url, RegularExpression[".com\\/(.*).git"]->"$1"]//First // Quiet;
     If[!StringQ[new], new = StringCases[url, RegularExpression[".com\\/(.*)"]->"$1"]//First];
-    Echo["LPM >> fetching info by "<>new<>" on a Github..."];
+    Echo["LPM >> fetching info for "<>new<>" on a Github..."];
 
     (* here we FETCH PACLETINFO.WL file and use its metadata *)
     data = Check[Get["https://raw.githubusercontent.com/"<>new<>"/"<>ToLowerCase[branch]<>"/PacletInfo.wl"], $Failed];
@@ -224,7 +224,7 @@ Module[{new, data},
     (* if failed. we just STOP *)
     If[FailureQ[data],
       Echo["LPM >> ERROR cannot get "<>new<>"!"];
-      Echo["LPM >> Abortting"];
+      Echo["LPM >> Aborting"];
       Abort[];
     ];
 
@@ -242,7 +242,7 @@ InstallPaclet[dir_String][a_Association, Rule[Github, url_String]] := Module[{di
     (* check if there is no data on releases -> *)
     If[MissingQ[a["zipball_url"]], 
       (* TAKE Master branch instead *)
-      Echo["LPM >> Releases are not available for now... taking a master branch"];
+      Echo["LPM >> Releases are not available. Taking a master branch"];
       Return[InstallPaclet[dir][a, Rule[Github, Rule[url, "master"]]]];
     ];
 
@@ -251,7 +251,7 @@ InstallPaclet[dir_String][a_Association, Rule[Github, url_String]] := Module[{di
 
     (* in a case of update, directory will probably be there.. cleaning it! *)
     If[FileExistsQ[dirName],
-        Echo["LPM >> package folder "<>dirName<>" is already exists!"];
+        Echo["LPM >> package folder "<>dirName<>" already exists!"];
         Echo["LPM >> purging..."];
         DeleteDirectory[dirName, DeleteContents -> True];
     ];
@@ -292,7 +292,7 @@ InstallPaclet[dir_String][a_Association, Rule[Github, Rule[url_String, branch_St
     dirName = FileNameJoin[{dirName, StringReplace[a["Name"], "/"->"_"]}];
 
     If[FileExistsQ[dirName],
-        Echo["LPM >> package folder "<>dirName<>" is already exists!"];
+        Echo["LPM >> package folder "<>dirName<>" already exists!"];
         Echo["LPM >> purging..."];
         DeleteDirectory[dirName, DeleteContents -> True];
     ];
@@ -327,7 +327,7 @@ RemovePaclet[dir_String][a_Association] := RemovePaclet[dir][a, a["key"]]
 RemovePaclet[dir_String][a_Association, Rule[Github, url_String]] := (
   
   If[MissingQ[a["zipball_url"]], 
-    Echo["LPM >> Releases are not available for now... removing master"];
+    Echo["LPM >> Releases are not available. Removing master"];
     Return[RemovePaclet[dir][a, Rule[Github, Rule[url, "master"]]]];
   ];  
 
