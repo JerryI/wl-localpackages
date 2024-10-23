@@ -9,6 +9,29 @@ Begin["`Private`"]
 JerryI`LPM`Private`Version = 12
 pacletDirectoryLoad = PacletDirectoryLoad
 
+
+convertVersion[str_String] := ToExpression[StringReplace[str, "."->""]]
+convertVersion[number_?NumericQ] := number
+convertVersion[any_] := convertVersion[any["Version"]]
+
+
+inspectPackages[dir_String] := Module[{
+  packages
+},
+  packages = Get /@ FileNames["PacletInfo.wl", {dir}, {2}];
+
+  With[{found = SortBy[PacletFind[#["Name"] ], convertVersion]},
+    If[Length[found] > 0,
+      With[{conflicting = found // Last},
+        If[convertVersion[conflicting] > convertVersion[#],
+          Echo[StringTemplate["LPM >> Conflicting version! Globally installed `` vs locally loaded ``"][convertVersion[conflicting], convertVersion[p] ] ];
+          cbk[conflicting, #];
+        ]
+      ]
+    ]
+  ] &/@ packages;
+]
+
 PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, repos, cache, updated, removed, new, current, updatable, skipUpdates = OptionValue["Passive"]},
     (* making key-values pairs *)
     repos = (#-><|"key"->#|>)&/@list // Association;
@@ -43,6 +66,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
 
     (* PASSIVE mode :: skips all checks and just loads wl_package folder *)
     If[skipUpdates, 
+      inspectPackages[FileNameJoin[{projectDir, "wl_packages"}], OptionValue["ConflictResolutionFunction"] ];
       Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
       Return[Null, Module];
     ];
@@ -54,6 +78,7 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       
       If[!MissingQ[cache], 
         Echo["LPM >> using stored data"];
+        inspectPackages[FileNameJoin[{projectDir, "wl_packages"}], OptionValue["ConflictResolutionFunction"] ];
         Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
         Return[Null, Module];
       ,
@@ -110,10 +135,17 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     Put[Now, FileNameJoin[{projectDir, ".wl_timestamp"}] ];
 
     (* finally load dirs *)
+    inspectPackages[FileNameJoin[{projectDir, "wl_packages"}], OptionValue["ConflictResolutionFunction"] ];
     Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
 ]
 
-Options[PacletRepositories] = {"Directory"->None, "Passive"->False, "ForceUpdates" -> False, "UpdateInterval" -> Quantity[7, "Days"]}
+Options[PacletRepositories] = {"Directory"->None, "Passive"->False, "ForceUpdates" -> False, "UpdateInterval" -> Quantity[7, "Days"], "ConflictResolutionFunction" -> Function[{conflicting, true}, 
+  Echo["LPM >> resolving by uninstalling a global one"];
+  If[PacletUninstall[conflicting] =!= Null,
+    Echo["FAILED!"];
+    Exit[-1];
+  ];
+]}
 
 CacheStore[dir_String, repos_Association] := Export[FileNameJoin[{dir, "wl_packages_lock.wl"}], repos]
 CacheLoad[dir_String] := If[!FileExistsQ[FileNameJoin[{dir, "wl_packages_lock.wl"}]], Missing[], Import[FileNameJoin[{dir, "wl_packages_lock.wl"}]]];

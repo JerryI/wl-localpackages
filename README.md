@@ -1,13 +1,24 @@
-# Wolfram Language Local Package Manager
+# Wolfram Language Local Package Manager (LPM)
 
 ![logo](images-2.jpeg)
 
-Got fed by by using `PacletInstall` that stores your packages in a middle of nowhere? Not receiving updates?
-Has to publish update on github and then on Wolfram Repository everytime?
-That sucks
+
+Tired of using `PacletInstall` and having your packages stored in obscure locations? Not receiving updates? Frustrated with publishing updates on GitHub and then again on the Wolfram Repository every time? 
+
+It sucks
+
+Working with paclets the standard way has many issues:
+
+- [Deployment requires](https://community.wolfram.com/groups/-/m/t/3304323) using a Mathematica notebook.
+- Packages are deployed globally vs. locally (where are my packages actually located?!).
+- [Version conflicts](https://community.wolfram.com/groups/-/m/t/3305665) are common.
+- Complete dependency on Wolfram servers.
+- It’s impossible to store dependencies individually for each project.
+
+Let me know if you’d like any further adjustments!
 
 ## Solution
-Keep your modules up-to date with just github and locally to your projects just like npm
+Keep your modules up-to date with just github and locally to your projects just like `npm`
 
 Just add a few lines to your project
 ```mathematica
@@ -53,21 +64,17 @@ will ignore any changes made to repos list and updates and directly load all loc
 In the case of no internet connection possible, it will use local files
 
 
+## Conflict resolution
+There is a known problem of WL's priorities to the package version (see [discussion](https://community.wolfram.com/groups/-/m/t/3305665))
+All conflicts are resolved by an option `"ConflictResolutionFunction"`, which by the default just uninstalls a global conflicting paclet.
+
 ## Install once and be happy
-It ships via standart wolfram paclet system. Install it once and forget about `PacletInstall` command forever
+Install it once and forget about `PacletInstall` command forever
 
-```mathematica
-PacletInstall["JerryI/LPM"]
-<< JerryI`LPM`
-```
-
-or directly
 ```mathematica
 Get["https://raw.githubusercontent.com/JerryI/wl-localpackages/main/Kernel/LPM.wl"]
 ```
 
 or paste this single file to your project
-
-or from Github releases.
 
 No updates are expected
