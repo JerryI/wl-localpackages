@@ -1,14 +1,18 @@
 BeginPackage["JerryI`LPM`"]
 
-PacletRepositories::usage = "PacletRepositories[{Github -> \"URL to the repo\", ...}] specify the wolfram packages to be synced via remote url"
-Github::usage = "internal name to specify the source of the package"
+PacletRepositories::usage = "depricated"
+LPMRepositories::usage = "LPMRepositories[{\"Github\" -> \"URL to the repo\", ...}] specify the wolfram packages to be synced via remote url"
+LPMLoad::usage = ""
+Github::usage = "depricated"
 
 
 Begin["`Private`"]
 
-JerryI`LPM`Private`Version = 15
 pacletDirectoryLoad = PacletDirectoryLoad
 
+urlImport = Import;
+urlDownload= URLDownload;
+urlGet = Get;
 
 convertVersion[str_String] := ToExpression[StringReplace[str, "."->""]]
 convertVersion[any_PacletObject] := convertVersion[any["Version"]]
@@ -17,7 +21,7 @@ convertVersion[any_PacletObject] := convertVersion[any["Version"]]
 inspectPackages[dir_String, cbk_] := Module[{ 
   packages
 },
-  packages = Get /@ FileNames["PacletInfo.wl", {dir}, {2}];
+  packages = Get /@ DeleteDuplicatesBy[FileNames["PacletInfo.wl" | "PacletInfo.m", {dir}, {2}], DirectoryName];
 
   With[{found = SortBy[PacletFind[#["Name"] ], convertVersion]},
 
@@ -32,7 +36,11 @@ inspectPackages[dir_String, cbk_] := Module[{
   ] &/@ packages;
 ]
 
-PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, repos, cache, updated, removed, new, current, updatable, skipUpdates = OptionValue["Passive"]},
+LPMRepositories = PacletRepositories;
+
+LPMLoad[projectDir_String] := If[FileExistsQ[FileNameJoin[{projectDir, "wl_packages"}] ], Map[pacletDirectoryLoad] @  Map[DirectoryName] @  DeleteDuplicatesBy[FileNames["PacletInfo.wl" | "PacletInfo.m", {#}, {2}], DirectoryName]& @ FileNameJoin[{projectDir, "wl_packages"}], $Failed];
+
+PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, strictMode = OptionValue["StrictMode"], info, repos, cache, updated, removed, new, current, updatable, skipUpdates = OptionValue["Passive"], automaticUpdates = OptionValue["AutomaticUpdates"], versionControl, maxVersionDiff = OptionValue["MaxVersionDiff"]},
     (* making key-values pairs *)
     repos = (#-><|"key"->#|>)&/@list // Association;
 
@@ -50,41 +58,42 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       CreateDirectory[projectDir, CreateIntermediateDirectories->True];
       If[!FileExistsQ[projectDir], Echo["LPM >> Cannot create project directory by path "<>projectDir<>" !!!"]; Abort[] ];
     ];
-
-    Echo["LPM >> project directory >> "<>projectDir];
     
 
     If[FileExistsQ[FileNameJoin[{projectDir, ".wl_timestamp"}] ] && !OptionValue["ForceUpdates"],
       With[{time = Get[ FileNameJoin[{projectDir, ".wl_timestamp"}] ]},
-        If[Now - time < OptionValue["UpdateInterval"],
+        If[Now - time < OptionValue["UpdateInterval"] || strictMode,
           skipUpdates = True;
           
+          With[{c = CacheLoad[projectDir]}, If[AssociationQ[c] && !TrueQ[strictMode], 
+            If[Length[Complement[Keys[repos], Keys[c] ] ] > 0, skipUpdates = False];
+          ] ];
+          
         ];
-        Echo[StringJoin["LPM >> updated last time >> ", time // TextString] ];
       ]
     ];
 
     (* PASSIVE mode :: skips all checks and just loads wl_package folder *)
     If[skipUpdates, 
       inspectPackages[FileNameJoin[{projectDir, "wl_packages"}], OptionValue["ConflictResolutionFunction"] ];
-      Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
+      Map[pacletDirectoryLoad] @  Map[DirectoryName] @  DeleteDuplicatesBy[FileNames["PacletInfo.wl" | "PacletInfo.m", {#}, {2}], DirectoryName]& @ FileNameJoin[{projectDir, "wl_packages"}];
       Return[Null, Module];
     ];
 
-    Echo["LPM >> fetching packages info..."];
+    Echo["LPM >> fetching packages info"];
 
     If[FailureQ[ URLFetch["https://github.com"] ],
-      Echo["LPM >> ERROR! no internet connection to github.com!"];
-      
-      If[!MissingQ[cache], 
-        Echo["LPM >> using stored data"];
-        inspectPackages[FileNameJoin[{projectDir, "wl_packages"}], OptionValue["ConflictResolutionFunction"] ];
-        Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
-        Return[Null, Module];
-      ,
-        Echo["LPM >> ERROR! no cache found ;()"];
-        Abort[];
-      ];
+        Echo["LPM >> ERROR! no connection to github.com!"];
+
+        If[!MissingQ[cache], 
+          Echo["LPM >> using stored data"];
+          inspectPackages[FileNameJoin[{projectDir, "wl_packages"}], OptionValue["ConflictResolutionFunction"] ];
+          Map[pacletDirectoryLoad] @  Map[DirectoryName] @  DeleteDuplicatesBy[FileNames["PacletInfo.wl" | "PacletInfo.m", {#}, {2}], DirectoryName]& @ FileNameJoin[{projectDir, "wl_packages"}];
+          Return[Null, Module];
+        ,
+          Echo["LPM >> ERROR! no cache found ;()"];
+          Abort[];
+        ];
     ];
 
     (* fetching new information from Github for each repo in the list *)
@@ -119,9 +128,39 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
       new = InstallPaclet[projectDir] /@ new;
 
       (* what must be updated *)
-      updatable = Select[current, CheckUpdates];
+      If[automaticUpdates,
+        updatable = Select[current, CheckUpdates];
+      ,
+        Echo["LPM >> Automatic updates are suppressed by default"];
+        updatable = <||>;
+      ];
+
       (* will be updated *)
       updated   = ((#->repos[#])&/@ Keys[updatable]) // Association;
+
+      If[maxVersionDiff =!= None,
+        (* filter if the version is too high *)
+        versionControl = VersionsLoad[projectDir];
+        If[versionControl =!= None,
+          (* apply filter *)
+
+          updated = Table[ With[{
+            lookupVersion = Lookup[versionControl, key, Missing[] ]
+          },
+            
+            If[
+              MissingQ[lookupVersion] || (
+                convertVersion[ updated[key]["Version"] ] - convertVersion[lookupVersion] <= maxVersionDiff
+              ),
+
+                key -> updated[key],
+
+                Echo["LPM >> Version difference is too high. Bundled: "<>lookupVersion<>" vs Remote: "<>updated[key]["Version"] ]; 
+                Echo["Skipping..."];
+                Nothing
+          ] ], {key, Keys[updated]}] // Association;
+        ];
+      ];
  
       Echo[StringTemplate["LPM >> will be UPDATED: ``"][Length[updatable]]];
 
@@ -132,14 +171,19 @@ PacletRepositories[list_List, OptionsPattern[]] := Module[{projectDir, info, rep
     (* update local cache file aka packages.json *)
     CacheStore[projectDir, repos];
 
+    (* store version (if applicable) *)
+    If[maxVersionDiff =!= None && versionControl === None,
+      VersionsStore[projectDir, repos]
+    ];
+
     Put[Now, FileNameJoin[{projectDir, ".wl_timestamp"}] ];
 
     (* finally load dirs *)
     inspectPackages[FileNameJoin[{projectDir, "wl_packages"}], OptionValue["ConflictResolutionFunction"] ];
-    Map[pacletDirectoryLoad] @  Map[DirectoryName] @  FileNames["PacletInfo.wl", {#}, {2}]& @ FileNameJoin[{projectDir, "wl_packages"}];
+    Map[pacletDirectoryLoad] @  Map[DirectoryName] @  DeleteDuplicatesBy[FileNames["PacletInfo.wl" | "PacletInfo.m", {#}, {2}], DirectoryName]& @ FileNameJoin[{projectDir, "wl_packages"}];
 ]
 
-Options[PacletRepositories] = {"Directory"->None, "Passive"->False, "ForceUpdates" -> False, "UpdateInterval" -> Quantity[7, "Days"], "ConflictResolutionFunction" -> Function[{conflicting, true}, 
+Options[PacletRepositories] = {"Directory"->None, "StrictMode"->False, "Passive"->False, "ForceUpdates" -> False, "AutomaticUpdates"->True, "MaxVersionDiff" -> None, "UpdateInterval" -> Quantity[14, "Days"], "ConflictResolutionFunction" -> Function[{conflicting, true}, 
   Echo["LPM >> resolving by uninstalling a global one"];
   If[PacletUninstall[conflicting] =!= Null,
     Echo["FAILED!"];
@@ -150,6 +194,10 @@ Options[PacletRepositories] = {"Directory"->None, "Passive"->False, "ForceUpdate
 CacheStore[dir_String, repos_Association] := Export[FileNameJoin[{dir, "wl_packages_lock.wl"}], repos]
 CacheLoad[dir_String] := If[!FileExistsQ[FileNameJoin[{dir, "wl_packages_lock.wl"}]], Missing[], Import[FileNameJoin[{dir, "wl_packages_lock.wl"}]]];
 
+VersionsStore[dir_String, repos_Association] := Export[FileNameJoin[{dir, "wl_packages_version.wl"}], Map[Function[data, data["Version"] ], repos] ]
+VersionsLoad[dir_String] := If[FileExistsQ[FileNameJoin[{dir, "wl_packages_version.wl"}] ], Import[FileNameJoin[{dir, "wl_packages_version.wl"}] ], None ]
+
+
 CheckUpdates[a_Association] := Module[{result},
   CheckUpdates[a, a["key"]]
 ]
@@ -157,10 +205,10 @@ CheckUpdates[a_Association] := Module[{result},
 convertVersion[str_String] := ToExpression[StringReplace[str, "." -> ""]]
 
 (* general function work for both Releases & Branches *)
-CheckUpdates[a_Association, Rule[Github, _]] := Module[{package, new, now},
+CheckUpdates[a_Association, Rule[Github | "Github", _]] := Module[{package, new, now},
   (* fetch any *)
   package = FetchInfo[a];
-  If[!AssociationQ[package], Echo["LPM >> cannot check the github! skipping..."]; Return[False, Module]];
+  If[!AssociationQ[package], Echo["LPM >> cannot check. Skipping..."]; Return[False, Module]];
 
   (* a feature on how we can detect on what we are looking at *)
   If[KeyExistsQ[package, "tag_name"],
@@ -190,20 +238,20 @@ FetchInfo[a_Association] := Module[{result},
 ]
 
 (* for releases *)
-FetchInfo[a_Association, Rule[Github, url_String]] := Module[{new, data},
+FetchInfo[a_Association, Rule[Github | "Github", url_String]] := Module[{new, data},
   (* extracting from given url *)
   new = StringCases[url, RegularExpression[".com\\/(.*).git"]->"$1"]//First // Quiet;
     If[!StringQ[new], new = StringCases[url, RegularExpression[".com\\/(.*)"]->"$1"]//First];
-    Echo["LPM >> fetching releases info for "<>new<>" on a Github..."];
+    Echo["LPM >> fetching releases info for "<>new<>" on Github..."];
 
   (* here we FETCH GITHUB API RESPONCE and use releases metadata *)
-  data = Import["https://api.github.com/repos/"<>new<>"releases/latest", "JSON"] // Association // Quiet;
+  data = urlImport["https://api.github.com/repos/"<>new<>"releases/latest", "JSON"] // Association // Quiet;
 
   (* if there is NO RELEASES *)
   If[!StringQ[data["zipball_url"]],
-    Print["Releases are not available for now... taking a master branch"];
+    Print["Releases are not available. Taking a master branch"];
     (* TAKE MASTER Branch *)
-    Return[FetchInfo[a, Rule[Github, Rule[url, "master"]]]];
+    Return[FetchInfo[a, Rule["Github", Rule[url, "master"]]]];
   ];
 
   (* merge new and old data together *)
@@ -211,31 +259,37 @@ FetchInfo[a_Association, Rule[Github, url_String]] := Module[{new, data},
 ]
 
 (* for branches *)
-FetchInfo[a_Association, Rule[Github, Rule[url_String, branch_String]]] :=
+FetchInfo[a_Association, Rule[Github | "Github", Rule[url_String, branch_String]]] :=
 Module[{new, data},
   (* extracting from given url *)    
     new = StringCases[url, RegularExpression[".com\\/(.*).git"]->"$1"]//First // Quiet;
     If[!StringQ[new], new = StringCases[url, RegularExpression[".com\\/(.*)"]->"$1"]//First];
-    Echo["LPM >> fetching info for "<>new<>" on a Github..."];
+    Echo["LPM >> fetching info for "<>new<>" on Github..."];
 
     (* here we FETCH PACLETINFO.WL file and use its metadata *)
-    data = Check[Get["https://raw.githubusercontent.com/"<>new<>"/"<>ToLowerCase[branch]<>"/PacletInfo.wl"], $Failed];
-    
+    data = urlGet["https://raw.githubusercontent.com/"<>new<>"/"<>ToLowerCase[branch]<>"/PacletInfo.wl"] // Quiet;
+    If[!MatchQ[ToString[Head[data] ], "PacletObject" | "Paclet"], 
+      data = urlGet["https://raw.githubusercontent.com/"<>new<>"/"<>ToLowerCase[branch]<>"/PacletInfo.m"];
+    ];
+
     (* if failed. we just STOP *)
-    If[FailureQ[data],
+
+    If[!MatchQ[ToString[Head[data] ], "PacletObject" | "Paclet"], (* some issue with contexts *)
+      Echo["Failed"];
+      Echo[ToString[data, InputForm] ];
       Echo["LPM >> ERROR cannot get "<>new<>"!"];
       Echo["LPM >> Aborting"];
       Abort[];
     ];
 
-    Join[a, data//First, <|"git-url"->new|>]
+    Join[a, Switch[ToString[Head[data] ], "PacletObject", data//First, "Paclet", Association @ KeyValueMap[Function[{k,v}, ToString[k]->v], Association @@ data] ], <|"git-url"->new|>]
 ]
 
 (* general function *)
 InstallPaclet[dir_String][a_Association] := InstallPaclet[dir][a, a["key"]]
 
 (* releases *)
-InstallPaclet[dir_String][a_Association, Rule[Github, url_String]] := Module[{dirName, pacletPath},
+InstallPaclet[dir_String][a_Association, Rule[Github | "Github", url_String]] := Module[{dirName, pacletPath},
     dirName = FileNameJoin[{dir, "wl_packages"}];
     If[!FileExistsQ[dirName], CreateDirectory[dirName]];
 
@@ -243,7 +297,7 @@ InstallPaclet[dir_String][a_Association, Rule[Github, url_String]] := Module[{di
     If[MissingQ[a["zipball_url"]], 
       (* TAKE Master branch instead *)
       Echo["LPM >> Releases are not available. Taking a master branch"];
-      Return[InstallPaclet[dir][a, Rule[Github, Rule[url, "master"]]]];
+      Return[InstallPaclet[dir][a, Rule["Github", Rule[url, "master"]]]];
     ];
 
     (* make a name from the git url provided *)
@@ -251,37 +305,37 @@ InstallPaclet[dir_String][a_Association, Rule[Github, url_String]] := Module[{di
 
     (* in a case of update, directory will probably be there.. cleaning it! *)
     If[FileExistsQ[dirName],
-        Echo["LPM >> package folder "<>dirName<>" already exists!"];
+        Echo["LPM >> package folder already exists!"];
         Echo["LPM >> purging..."];
         DeleteDirectory[dirName, DeleteContents -> True];
     ];
 
     (* download release *)
-    Echo["LPM >> fetching a release..."];    
-    URLDownload[a["zipball_url"], FileNameJoin[{dir, "___temp.zip"}]];
+    Echo["LPM >> fetching a release"];    
+    urlDownload[a["zipball_url"], FileNameJoin[{dir, "___temp.zip"}]];
     
     (* extract to temporary directory and copy *)
-    Echo["LPM >> extracting..."];
+    Echo["LPM >> extracting"];
     ExtractArchive[FileNameJoin[{dir, "___temp.zip"}], FileNameJoin[{dir, "___temp"}]];
     DeleteFile[FileNameJoin[{dir, "___temp.zip"}]];
     
     (* locate PacletInfo, if it is not there, this is very bad. *)
-    pacletPath = FileNames["PacletInfo.wl", FileNameJoin[{dir, "___temp"}], 2] // First;
+    pacletPath = FileNames["PacletInfo.wl" | "PacletInfo.m", FileNameJoin[{dir, "___temp"}], 2] // First;
 
     If[!FileExistsQ[pacletPath], Echo["LPM >> FAILED!!! to fetch by "<>ToString[pacletPath]]; Abort[]];
     pacletPath = DirectoryName[pacletPath];
 
-    Echo[StringTemplate["LPM >> copying... from `` to ``"][pacletPath, dirName]];
+    Echo[StringTemplate["LPM >> copying from `` to ``"][pacletPath, dirName]];
  
     CopyDirectory[pacletPath, dirName];
     DeleteDirectory[FileNameJoin[{dir, "___temp"}], DeleteContents -> True];
-    Print["LPM >> finished!"];
+    Print["LPM >> finished"];
 
     a
 ]
 
 (* for branch *)
-InstallPaclet[dir_String][a_Association, Rule[Github, Rule[url_String, branch_String]]] := Module[{dirName, pacletPath},
+InstallPaclet[dir_String][a_Association, Rule[Github | "Github", Rule[url_String, branch_String]]] := Module[{dirName, pacletPath},
     dirName = FileNameJoin[{dir, "wl_packages"}];
     If[!FileExistsQ[dirName], CreateDirectory[dirName]];
 
@@ -289,7 +343,7 @@ InstallPaclet[dir_String][a_Association, Rule[Github, Rule[url_String, branch_St
     If[MissingQ[a["git-url"]], Echo["LPM >> ERROR!!! not git-url was found"]; Abort[]];
 
     (* construct name of the folder *)
-    dirName = FileNameJoin[{dirName, StringReplace[a["Name"], "/"->"_"]}];
+    dirName = FileNameJoin[{dirName, StringReplace[Lookup[a, "Name", a[Name] ], "/"->"_"]}];
 
     If[FileExistsQ[dirName],
         Echo["LPM >> package folder "<>dirName<>" already exists!"];
@@ -299,22 +353,22 @@ InstallPaclet[dir_String][a_Association, Rule[Github, Rule[url_String, branch_St
 
     (* download branch as zip using old API *)
     Echo["LPM >> fetching a zip archive from the master branch..."];    
-    URLDownload["https://github.com/"<>a["git-url"]<>"/zipball/"<>ToLowerCase[branch], FileNameJoin[{dir, "___temp.zip"}]];
+    urlDownload["https://github.com/"<>a["git-url"]<>"/zipball/"<>ToLowerCase[branch], FileNameJoin[{dir, "___temp.zip"}]];
     
-    Echo["LPM >> extracting..."];
+    Echo["LPM >> extracting"];
     ExtractArchive[FileNameJoin[{dir, "___temp.zip"}], FileNameJoin[{dir, "___temp"}]];
     DeleteFile[FileNameJoin[{dir, "___temp.zip"}]];
     
-    pacletPath = FileNames["PacletInfo.wl", FileNameJoin[{dir, "___temp"}], 2] // First;
+    pacletPath = FileNames["PacletInfo.wl" | "PacletInfo.m", FileNameJoin[{dir, "___temp"}], 2] // First;
 
     If[!FileExistsQ[pacletPath], Echo["LPM >> FAILED!!! to fetch by "<>ToString[pacletPath]]; Abort[]];
     pacletPath = DirectoryName[pacletPath];
 
-    Echo[StringTemplate["LPM >> copying... from `` to ``"][pacletPath, dirName]];
+    Echo[StringTemplate["LPM >> copying from `` to ``"][pacletPath, dirName]];
  
     CopyDirectory[pacletPath, dirName];
     DeleteDirectory[FileNameJoin[{dir, "___temp"}], DeleteContents -> True];
-    Print["LPM >> finished!"];
+    Print["LPM >> finished"];
 
     a
 ]
@@ -324,11 +378,11 @@ InstallPaclet[dir_String][a_Association, Rule[Github, Rule[url_String, branch_St
 RemovePaclet[dir_String][a_Association] := RemovePaclet[dir][a, a["key"]]
 
 (* releases *)
-RemovePaclet[dir_String][a_Association, Rule[Github, url_String]] := (
+RemovePaclet[dir_String][a_Association, Rule[Github | "Github", url_String]] := (
   
   If[MissingQ[a["zipball_url"]], 
     Echo["LPM >> Releases are not available. Removing master"];
-    Return[RemovePaclet[dir][a, Rule[Github, Rule[url, "master"]]]];
+    Return[RemovePaclet[dir][a, Rule["Github", Rule[url, "master"]]]];
   ];  
 
   dirName = FileNameJoin[{dir, "wl_packages"}];
@@ -347,7 +401,7 @@ RemovePaclet[dir_String][a_Association, Rule[Github, url_String]] := (
 )
 
 (* branches *)
-RemovePaclet[dir_String][a_Association, Rule[Github, Rule[url_String, branch_String]]] := Module[{dirName, pacletPath},
+RemovePaclet[dir_String][a_Association, Rule[Github | "Github", Rule[url_String, branch_String]]] := Module[{dirName, pacletPath},
     dirName = FileNameJoin[{dir, "wl_packages"}];
     dirName = FileNameJoin[{dirName, StringReplace[a["Name"], "/"->"_"]}];
 

@@ -22,8 +22,8 @@ Keep your modules up-to date with just github and locally to your projects just 
 
 Just add a few lines to your project
 ```mathematica
-PacletRepositories[{
-    Github -> "https://github.com/KirillBelovTest/HTTPHandler"
+LPMRepositories[{
+    "Github" -> "https://github.com/KirillBelovTest/HTTPHandler"
 }]
 
 <<KirillBelov`HTTPHandler`
@@ -35,8 +35,8 @@ Everything is done automatically and does not mess with `Needs` you have.
 ## Releases, branches?
 By the default it looks for the latest release and downloads it, otherwise just `master` branch will be downloaded
 ```mathematica
-PacletRepositories[{
-    Github -> "https://github.com/KirillBelovTest/HTTPHandler"
+LPMRepositories[{
+    "Github" -> "https://github.com/KirillBelovTest/HTTPHandler"
 }]
 ```
 
@@ -44,8 +44,8 @@ PacletRepositories[{
 One can specify which branch should be downloaded
 
 ```mathematica
-PacletRepositories[{
-    Github -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
+LPMRepositories[{
+    "Github" -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
 }]
 ```
 
@@ -53,8 +53,8 @@ PacletRepositories[{
 Using a special option
 
 ```mathematica
-PacletRepositories[{
-    Github -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
+LPMRepositories[{
+    "Github" -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
 }, "Passive"->True]
 ```
 

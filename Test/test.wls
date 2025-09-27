@@ -4,8 +4,8 @@ SetDirectory[DirectoryName[$InputFileName]]
 
 Get[FileNameJoin[{ParentDirectory[Directory[]], "Kernel", "LPM.wl"}]]
 
-PacletRepositories[{
-    Github -> "https://github.com/JerryI/Internal" -> "master"
+LPMRepositories[{
+    "Github" -> "https://github.com/JerryI/Internal" -> "master"
 }]
 
 <<KirillBelov`Internal`

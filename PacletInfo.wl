@@ -8,7 +8,7 @@ PacletObject[
     "License" -> "MIT",
     "PublisherID" -> "JerryI",
     "Version" -> "0.1.3",
-    "WolframVersion" -> "10+",
+    "WolframVersion" -> "13+",
     "PrimaryContext" -> "JerryI`LPM`",
     "Extensions" -> {
       {
