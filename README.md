@@ -49,13 +49,11 @@ LPMRepositories[{
 }]
 ```
 
-## Bypass any checks
-Using a special option
+## Load existing paclets folder
+Use `LPMLoad`
 
 ```mathematica
-LPMRepositories[{
-    "Github" -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
-}, "Passive"->True]
+LPMLoad[]
 ```
 
 will ignore any changes made to repos list and updates and directly load all local packages into WL.
@@ -68,13 +66,21 @@ In the case of no internet connection possible, it will use local files
 There is a known problem of WL's priorities to the package version (see [discussion](https://community.wolfram.com/groups/-/m/t/3305665))
 All conflicts are resolved by an option `"ConflictResolutionFunction"`, which by the default just uninstalls a global conflicting paclet.
 
-## Install once and be happy
-Install it once and forget about `PacletInstall` command forever
+## Installation
 
 ```mathematica
-Get["https://raw.githubusercontent.com/JerryI/wl-localpackages/main/Kernel/LPM.wl"]
+PacletInstall["https://raw.githubusercontent.com/JerryI/wl-localpackages/main/Build/JerryI__LPM-0.1.7.paclet"]
 ```
 
-or paste this single file to your project
+And
 
-No updates are expected
+```
+Get["JerryI`LPM`"];
+```
+
+or get/paste this single file to your project:
+
+```
+https://raw.githubusercontent.com/JerryI/wl-localpackages/main/Kernel/LPM.wl
+```
+

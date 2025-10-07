@@ -7,15 +7,14 @@ PacletObject[
     "Creator" -> "Kirill Vasin",
     "License" -> "MIT",
     "PublisherID" -> "JerryI",
-    "Version" -> "0.1.3",
+    "Version" -> "0.1.7",
     "WolframVersion" -> "13+",
     "PrimaryContext" -> "JerryI`LPM`",
     "Extensions" -> {
       {
         "Kernel",
         "Root" -> "Kernel",
-        "Context" -> {{"JerryI`LPM`", "LPM.wl"}},
-        "Symbols" -> {}
+        "Context" -> {{"JerryI`LPM`", "LPM.wl"}}
       },
  
       {
