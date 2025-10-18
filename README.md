@@ -15,8 +15,6 @@ Working with paclets the standard way has many issues:
 - Complete dependency on Wolfram servers.
 - It’s impossible to store dependencies individually for each project.
 
-Let me know if you’d like any further adjustments!
-
 ## Solution
 
 ### Using paclet archives
