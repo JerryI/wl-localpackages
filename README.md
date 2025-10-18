@@ -1,7 +1,7 @@
 # Wolfram Language Local Package Manager (LPM)
+*A basic, stupid package manager for Wolfram Language to install paclets locally*
 
-![logo](images-2.jpeg)
-
+![logo](./logo.png)
 
 Tired of using `PacletInstall` and having your packages stored in obscure locations? Not receiving updates? Frustrated with publishing updates on GitHub and then again on the Wolfram Repository every time? 
 
@@ -18,58 +18,58 @@ Working with paclets the standard way has many issues:
 Let me know if you’d like any further adjustments!
 
 ## Solution
-Keep your modules up-to date with just github and locally to your projects just like `npm`
 
-Just add a few lines to your project
-```mathematica
-LPMRepositories[{
-    "Github" -> "https://github.com/KirillBelovTest/HTTPHandler"
-}]
-
-<<KirillBelov`HTTPHandler`
-```
-
-It overrides all installed paclets and let Mathematica find them in `wl_packages` folder in your project.
-Everything is done automatically and does not mess with `Needs` you have.
-
-## Releases, branches?
-By the default it looks for the latest release and downloads it, otherwise just `master` branch will be downloaded
-```mathematica
-LPMRepositories[{
-    "Github" -> "https://github.com/KirillBelovTest/HTTPHandler"
-}]
-```
-
-### Branches
-One can specify which branch should be downloaded
+### Using paclet archives
+Load with a single line of code
 
 ```mathematica
 LPMRepositories[{
-    "Github" -> "https://github.com/KirillBelovTest/HTTPHandler" -> "master"
+    "https://urlToYourPaclet/CoolLibrary1.paclet",
+    "https://urlToYourPaclet/CoolLibrary2.paclet"
 }]
+
+<<CoolLibrary1`
+<<CoolLibrary2`
 ```
 
-## Load existing paclets folder
-Use `LPMLoad`
+It overrides all installed paclets (if found) and let Wolfram find them in `wl_packages` folder in your project. You can change it by providing `"Directory"` option.
+
+### Using Github repositories
+Load a folder hosted on Github as a public repository:
+
+```mathematica
+LPMRepositories[{
+    "Github" -> "https://github.com/userName/repo1" -> "master",
+    "Github" -> "https://github.com/userName/repo2" -> "dev"
+}]
+
+<<CoolLibrary1`
+<<CoolLibrary2`
+```
+
+✨ This approach gives you automatic updates out of the box
+
+At any change in the provided list a paclet can installed/updated/removed.
+
+## Load existing packages folder
+If you want to skip all updates checks, and just load the existing configuration:
 
 ```mathematica
 LPMLoad[]
 ```
 
-will ignore any changes made to repos list and updates and directly load all local packages into WL.
-
 ## Offline work
-In the case of no internet connection possible, it will use local files
-
+In the case of no internet connection possible, it will use stored configuration (aka `LPMLoad`)
 
 ## Conflict resolution
 There is a known problem of WL's priorities to the package version (see [discussion](https://community.wolfram.com/groups/-/m/t/3305665))
 All conflicts are resolved by an option `"ConflictResolutionFunction"`, which by the default just uninstalls a global conflicting paclet.
 
 ## Installation
+LPM can be installed as a paclet (globally)
 
 ```mathematica
-PacletInstall["https://raw.githubusercontent.com/JerryI/wl-localpackages/main/Build/JerryI__LPM-0.1.7.paclet"]
+PacletInstall["https://raw.githubusercontent.com/JerryI/wl-localpackages/main/Build/JerryI__LPM-0.1.8.paclet"]
 ```
 
 And
@@ -78,9 +78,10 @@ And
 Get["JerryI`LPM`"];
 ```
 
-or get/paste this single file to your project:
+or get/paste **this single file** to your project:
 
 ```
 https://raw.githubusercontent.com/JerryI/wl-localpackages/main/Kernel/LPM.wl
 ```
 
+No updates are expected or breaking changes
