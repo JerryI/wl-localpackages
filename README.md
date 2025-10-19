@@ -49,12 +49,24 @@ LPMRepositories[{
 
 At any change in the provided list a paclet can installed/updated/removed.
 
+### Options
+#### `"Directory"`
+By the default is `NotebookDirectory[]` or `Directory[]`
+
+#### `"PreseveConfiguration"`
+By the default is `False`. Set `True` to avoid automatic removing of packakes, which are no longer in the provided list.
+
 ## Load existing packages folder
 If you want to skip all updates checks, and just load the existing configuration:
 
 ```mathematica
 LPMLoad[]
 ```
+
+### Options
+#### `"Directory"`
+By the default is `NotebookDirectory[]` or `Directory[]`
+
 
 ## Offline work
 In the case of no internet connection possible, it will use stored configuration (aka `LPMLoad`)
