@@ -1,4 +1,4 @@
-# Wolfram Language Local Package Manager (LPM)
+# WL Local Package Manager (LPM)
 *A basic, stupid package manager for Wolfram Language to install paclets locally*
 
 ![logo](./logo.png)
