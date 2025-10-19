@@ -56,6 +56,9 @@ By the default is `NotebookDirectory[]` or `Directory[]`
 #### `"PreseveConfiguration"`
 By the default is `False`. Set `True` to avoid automatic removing of packakes, which are no longer in the provided list.
 
+#### `"Deffered"`
+By the default is `False`. Set `True` to skip loading of paclets after they have been installed
+
 ## Load existing packages folder
 If you want to skip all updates checks, and just load the existing configuration:
 
